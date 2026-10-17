@@ -52,13 +52,26 @@ foreach ($p in $pages) {
   if (Get-File ($base + $p.path) $out) { Write-Host "  ok   $($p.path)" } else { Write-Host "  FAIL $($p.path)" -ForegroundColor Red }
   if (Test-Path $out) { $allHtml += [IO.File]::ReadAllText($out, [Text.Encoding]::UTF8) }
 }
+# German versions (?lang=de) for reference
+$deDir = Join-Path $htmlDir 'de'
+New-Item -ItemType Directory -Force -Path $deDir | Out-Null
+foreach ($p in $pages) {
+  $out = Join-Path $deDir ($p.slug + '.html')
+  if (Get-File ($base + $p.path + '?lang=de') $out) { Write-Host "  ok   $($p.path)?lang=de" } else { Write-Host "  FAIL $($p.path)?lang=de" -ForegroundColor Red }
+  if (Test-Path $out) { $allHtml += [IO.File]::ReadAllText($out, [Text.Encoding]::UTF8) }
+}
 # robots / sitemap for reference
 Get-File "$base/robots.txt" (Join-Path $htmlDir 'robots.txt') | Out-Null
 Get-File "$base/pages-sitemap.xml" (Join-Path $htmlDir 'pages-sitemap.xml') | Out-Null
 
 Write-Host '== 2/4 Images (original resolution) ==' -ForegroundColor Cyan
-$ids = [regex]::Matches($allHtml, '[0-9a-f]{6}_[0-9a-f]{32}(?:f000|~mv2)?\.(?:png|jpe?g|gif|webp|svg)', 'IgnoreCase') |
+$ids = [regex]::Matches($allHtml, '[0-9a-f]{6}_[0-9a-f]{32}(?:f000|~mv2)?\.(?:png|jpe?g|gif|webp|svg|avif)', 'IgnoreCase') |
        ForEach-Object { $_.Value } | Sort-Object -Unique
+# Images that Wix only loads client-side (ourphilosophy slideshow)
+$ids += @('21375d_db0c2a9e35474311b1f3622922651c03~mv2.avif',
+          '21375d_0845d4f325f54674bf4620381b49d7af~mv2.avif',
+          '21375d_5171ff074bc64747894bd0502f74ce97~mv2.avif')
+$ids = $ids | Sort-Object -Unique
 $ok = 0; $fail = @()
 foreach ($id in $ids) {
   $out = Join-Path $mediaDir ($id -replace '~', '_')

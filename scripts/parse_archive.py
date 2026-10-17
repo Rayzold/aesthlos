@@ -25,7 +25,7 @@ PATHS = {
     "home": "/",
 }
 
-WIX_ID = re.compile(r"[0-9a-f]{6}_[0-9a-f]{32}(?:f000|~mv2)?\.(?:png|jpe?g|gif|webp|svg)", re.I)
+WIX_ID = re.compile(r"[0-9a-f]{6}_[0-9a-f]{32}(?:f000|~mv2)?\.(?:png|jpe?g|gif|webp|svg|avif)", re.I)
 
 
 def block_text(el: Tag) -> str:
@@ -115,6 +115,41 @@ def walk(page_root: Tag):
             yield {"type": "link", "text": label.replace("\n", " "), "href": el["href"]}
 
 
+PAGE_IDS = {}  # wix pageId (#xxxxx) -> url path, filled from site data
+
+
+def page_id_map(html: str) -> dict:
+    """Map Wix internal page ids to URL slugs using the router config embedded in the HTML."""
+    out = {}
+    for m in re.finditer(r'"pageId":"([a-z0-9]{5})","title":"[^"]*","pageUriSEO":"([^"]*)"', html):
+        out["#" + m.group(1)] = "/" + m.group(2)
+    for m in re.finditer(r'"([a-z0-9]{5})":\{"pageId":"[^"]*","title":"[^"]*","pageUriSEO":"([^"]*)"', html):
+        out.setdefault("#" + m.group(1), "/" + m.group(2))
+    return out
+
+
+def galleries(html: str) -> list:
+    """Pro-gallery items (image + caption + link) in display order."""
+    result = []
+    dec = json.JSONDecoder()
+    for m in re.finditer(r'"(comp-[a-z0-9]+)_galleryData":', html):
+        try:
+            obj, _ = dec.raw_decode(html, m.end())
+        except json.JSONDecodeError:
+            continue
+        items = []
+        for it in sorted(obj.get("items", []), key=lambda x: x.get("orderIndex", 0)):
+            md = it.get("metaData", {})
+            link = md.get("link", {}) or {}
+            data = link.get("data", {}) or {}
+            target = data.get("pageId") or data.get("url") or None
+            items.append({"image": it.get("mediaUrl") or md.get("fileName"), "title": md.get("title") or "",
+                          "description": md.get("description") or "", "alt": md.get("alt") or "",
+                          "link": PAGE_IDS.get(target, target)})
+        result.append({"component": m.group(1), "items": items})
+    return result
+
+
 def local_name(wix_id: str) -> str:
     return wix_id.replace("~", "_")
 
@@ -123,8 +158,11 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index = {}
     for html_file in sorted(HTML_DIR.glob("*.html")):
+        PAGE_IDS.update(page_id_map(html_file.read_text(encoding="utf-8")))
+    for html_file in sorted(HTML_DIR.glob("*.html")):
         slug = html_file.stem
-        soup = BeautifulSoup(html_file.read_text(encoding="utf-8"), "lxml")
+        raw = html_file.read_text(encoding="utf-8")
+        soup = BeautifulSoup(raw, "lxml")
         root = soup.find(id="SITE_CONTAINER") or soup.body
         items = list(walk(root))
 
@@ -153,6 +191,16 @@ def main():
                 lines += [f"[VIDEO {it['id']} {it['w']}x{it['h']}]", ""]
             elif t == "link":
                 lines += [f"[LINK] {it['text'] or '(no text)'} -> {it['href']}", ""]
+        gals = galleries(raw)
+        if gals:
+            lines += ["", "## [galleries]", ""]
+            for g in gals:
+                lines.append(f"### gallery {g['component']} ({len(g['items'])} items, display order)")
+                for it in g["items"]:
+                    lines.append(f"- {local_name(it['image'] or '')} | title: {it['title']} | alt: {it['alt']} "
+                                 f"| link: {it['link']}" + (f" | desc: {it['description']}" if it['description'] else ""))
+                lines.append("")
+            (out / "galleries.json").write_text(json.dumps(gals, ensure_ascii=False, indent=2), encoding="utf-8")
         (out / "content.md").write_text("\n".join(lines), encoding="utf-8")
         (out / "images.json").write_text(json.dumps(images, ensure_ascii=False, indent=2), encoding="utf-8")
         index[slug] = images
