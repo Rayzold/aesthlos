@@ -21,9 +21,13 @@ PROJECT: Rebuild https://www.aesthlos.com (currently on Wix) as a self-owned, st
 
 ## Owner decisions (2026-10-17, after Phase 1)
 - Body font: PF DinText Pro is a commercial Parachute font with no web license → use a free Google Fonts look-alike with Greek support (show the owner a comparison). Aka-Acid-Quinfo (free) and Questrial (Google) are kept as-is.
-- German: build the German version too, at `/de/<same-slug>`; old `?lang=de` URLs must redirect to it. German copy comes from archive/pages-de (verbatim, it is only partially translated; flag the gaps to the owner, do not invent translations).
+- German: build the German version too, at `/de/<same-slug>`; old `?lang=de` URLs must redirect to it. German copy comes from archive/pages-de verbatim. Where Wix has no German text (Greek left in place, English meta, copy errors), translate it into German (owner request) — keep new translations in src/content/de-translations.ts or marked `// translated`, and list each one in OWNER-CHANGES.md.
 - Fix these live-site bugs: contact email link → mailto:info@aesthlos.com; phone → tel:+302130144422; Infinity tile on /thecompositions links to /copy-of-the-composition-of-earth; og:image on every page.
 - /fullscreen-page and Wix member pages (/my-account etc.) are not migrated.
+
+## Owner changelog
+- OWNER-CHANGES.md (Greek) records every change/fix vs. the live Wix site for the owner. Update it whenever something differs from Wix.
+- Gold buttons use black text (contrast), owner-approved.
 
 ## Workflow
 - Work phase by phase (see "Claude Code Prompts - Aesthlos Rebuild.md"); stop after each phase for review.

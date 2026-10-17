@@ -1,10 +1,12 @@
+import { DE_COMPOSITION_TITLES } from "./de-translations";
 import type { Lang, Run } from "./types";
 
 /**
  * Homepage copy, verbatim from the live Wix site (generated from src/content/generated/{el,de}/home.json,
  * then frozen here so the copy can be edited without touching layout code).
  * German: where the Wix German version had no translation (Infinity block, composition captions,
- * "Δείτε περισσότερα" button) the Greek original is kept — see archive/de-gaps.md.
+ * "Δείτε περισσότερα" button) the text was translated for the new site — marked "translated" below,
+ * listed in OWNER-CHANGES.md.
  */
 export type HomeContent = {
   hero: { tagline: string[] };
@@ -40,17 +42,17 @@ export const home: Record<Lang, HomeContent> = {
   },
   de: {
     hero: { tagline: ["Eine erstklassige Nahrungsmittelserie,", "mit hochwertigen Kräuterkompositionen auf Honigbasis,", "die ganzheitlich zur Stärkung der Gesundheit abzielt."] },
+    // translated (Wix showed the hero tagline here instead of the Infinity text)
     infinity: {
-      // Not translated on the Wix German page (it repeated the hero tagline) -> Greek original kept.
-      title: "Αesthlos Infinity",
-      subtitle: "για Ζωτικότητα & Ευεξία",
-      cta: "Δείτε περισσότερα",
-      text: ["Η νέα προσθήκη που ήρθε να ολοκληρώσει", "τις Βοτανικές μας Συνθέσεις."],
+      title: "Aesthlos Infinity",
+      subtitle: "für Vitalität & Wohlbefinden",
+      cta: "Mehr erfahren",
+      text: ["Die neue Ergänzung, die unsere", "Botanischen Kompositionen vervollständigt."],
     },
     compositions: {
       title: "Die fünf Botanische Kompositionen",
-      // Captions were not translated on Wix.
-      items: ["H Σύνθεση της Γης", "Η Σύνθεση του Νερού", "Η Σύνθεση της Φωτιάς", "Η Σύνθεση του Αέρα", "Η Σύνθεση του Αιθέρα"].map((title, i) => ({ title, image: compositionImages[i], href: compositionLinks[i] })),
+      // translated (captions were Greek on the Wix German page)
+      items: [DE_COMPOSITION_TITLES.earth, DE_COMPOSITION_TITLES.water, DE_COMPOSITION_TITLES.fire, DE_COMPOSITION_TITLES.air, DE_COMPOSITION_TITLES.aether].map((title, i) => ({ title, image: compositionImages[i], href: compositionLinks[i] })),
     },
     about: {
       title: "Ein paar Worte über uns…",
