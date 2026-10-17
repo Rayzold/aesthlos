@@ -13,4 +13,4 @@ Owner-facing list: `OWNER-CHANGES.md` §2.
 | /de/thecompositions | 6 tile captions | Greek | translated |
 | /de/ourphilosophy | 2 opening body paragraphs | missing | reused verbatim German from Wix /de/thegreekhoneys |
 | /de/thegreekhoneys | "Griechischer Honig" 2 paragraphs | /ourphilosophy text in their place | translated |
-| /de/copy-of-the-composition-of-earth | Whole page | Earth composition text (copy error) | to translate in Phase 5 |
+| /de/copy-of-the-composition-of-earth | Whole page | Earth composition text (copy error) | translated |

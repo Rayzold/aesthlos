@@ -53,3 +53,9 @@ export function pageMetadata(lang: Lang, slug: Slug, ogImage?: string): Metadata
     verification: { google: GOOGLE_SITE_VERIFICATION },
   };
 }
+
+/** Meta description used for a page (German overrides included). */
+export function pageDescription(lang: Lang, slug: Slug): string | undefined {
+  const override = lang === "de" ? DE_META[slug] : undefined;
+  return override?.description ?? getPage(lang, slug).meta.description ?? undefined;
+}
