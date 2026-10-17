@@ -120,7 +120,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -209,7 +209,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -300,7 +300,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -410,7 +410,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -501,7 +501,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -608,7 +608,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -832,7 +832,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     {
      "type": "pdf",
      "label": "Διαβάστε Εδώ",
-     "href": "wixfile:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
+     "href": "pdf:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
     },
     {
      "type": "lead",
@@ -847,11 +847,11 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "links": [
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     },
     {
      "label": "Χημικές Αναλύσεις",
-     "href": "wixfile:21375d_4af6af938b46400392669fb091b07c93.pdf"
+     "href": "pdf:21375d_4af6af938b46400392669fb091b07c93.pdf"
     },
     {
      "label": "Mέλι Δάσους",
@@ -922,11 +922,11 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "links": [
     {
      "label": "Πιστοποίηση",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     },
     {
      "label": "Χημικές Αναλύσεις",
-     "href": "wixfile:21375d_73eb672f52df443291f93878977596e0.pdf"
+     "href": "pdf:21375d_73eb672f52df443291f93878977596e0.pdf"
     },
     {
      "label": "Μέλι Άγριας Βελανιδιάς",
@@ -1023,7 +1023,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1118,7 +1118,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1231,7 +1231,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1334,7 +1334,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1444,7 +1444,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1567,7 +1567,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     },
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     }
    ],
    "images": [
@@ -1784,7 +1784,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
     {
      "type": "pdf",
      "label": "Hier lesen",
-     "href": "wixfile:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
+     "href": "pdf:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
     },
     {
      "type": "lead",
@@ -1799,11 +1799,11 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "links": [
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     },
     {
      "label": "Chemische Analysen",
-     "href": "wixfile:21375d_4af6af938b46400392669fb091b07c93.pdf"
+     "href": "pdf:21375d_4af6af938b46400392669fb091b07c93.pdf"
     },
     {
      "label": "Waldhonig",
@@ -1874,11 +1874,11 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "links": [
     {
      "label": "Zertifizierung",
-     "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+     "href": "pdf:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
     },
     {
      "label": "Chemische Analysen",
-     "href": "wixfile:21375d_73eb672f52df443291f93878977596e0.pdf"
+     "href": "pdf:21375d_73eb672f52df443291f93878977596e0.pdf"
     },
     {
      "label": "Wildeichenhonig",

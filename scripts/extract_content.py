@@ -38,7 +38,7 @@ def norm_href(href: str) -> str:
     href = re.sub(r"^https?://(www\.)?aesthlos\.com", "", href) or "/"
     m = re.search(r"/_files/ugd/([0-9a-z_]+\.pdf)", href)
     if m:
-        return "wixfile:" + m.group(1)
+        return "pdf:" + m.group(1)
     return href
 
 
@@ -168,7 +168,7 @@ def extract(path: Path, lang: str):
 
     canon = soup.find("link", rel="canonical")
     meta = {"title": soup.title.get_text(strip=True) if soup.title else "", "description": m("description"),
-            "ogTitle": m("og:title"), "ogDescription": m("og:description"), "ogImage": m("og:image"),
+            "ogTitle": m("og:title"), "ogDescription": m("og:description"), "ogImage": None,  # Wix CDN URL — replaced by OG_IMAGES in src/content/site.ts
             "canonical": canon.get("href") if canon else None}
 
     gals = galleries(raw, pids)

@@ -69,7 +69,7 @@ def honey(lang, slug, images):
     b = G(lang, slug)
     flow = []
     title = txt(b[0]); accent = b[0]["runs"][0].get("color", "#FFC824")
-    STUDY = "wixfile:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
+    STUDY = "pdf:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
     links = []
     for x in b[1:]:
         if x["type"] == "text":

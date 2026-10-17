@@ -11,7 +11,7 @@ export const contact: Record<
     fields: { name: string; email: string; message: string };
     submit: string;
     success: string;
-    company: { line: string; name: string; nameHiddenOnWix?: boolean }[];
+    company: { line: string; name: string; nameDimmed?: boolean }[];
     address: string[];
     emailLabel: string;
     phoneLabel: string;
@@ -26,7 +26,7 @@ export const contact: Record<
     submit: "Αποστολή",
     success: "Ευχαριστούμε για την επικοινωνία!",
     // On Wix the person's name is dark grey (#2A2A2A) on black, i.e. practically hidden — kept as is.
-    company: [{ line: "AESTHLOS THERAFOODS ", name: "Κουτάλας Ανδρέας", nameHiddenOnWix: true }],
+    company: [{ line: "AESTHLOS THERAFOODS ", name: "Κουτάλας Ανδρέας", nameDimmed: true }],
     address: ["Εταιρεία Παραγωγής Τροφίμων", "Ομήρου 14, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα"],
     emailLabel: "E: ",
     phoneLabel: "Τ: +30 ",

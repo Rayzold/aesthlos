@@ -67,21 +67,8 @@ export function pathFor(lang: Lang, slug: string): string {
 
 /**
  * Social preview image per page (the live site only had one on /ourphilosophy;
- * owner asked for og:image on every page). Paths are under /public.
+ * owner asked for og:image on every page). 1200x630 JPEGs built by scripts/og-images.mjs.
  */
-export const OG_IMAGES: Record<Slug, string> = {
-  "": "/images/home/aesthlos-all-hero.webp",
-  ourphilosophy: "/images/shared/og-ourphilosophy.webp",
-  thegreekhoneys: "/images/thegreekhoneys/honeys-square.webp",
-  thecompositions: "/images/thecompositions/header.webp",
-  honeycollection: "/images/honeycollection/video-poster.webp",
-  contact: "/images/contact/greek-honey.webp",
-  "copy-of-the-composition-of-earth": "/images/products/infinity.webp",
-  compositionofearth: "/images/products/earth.webp",
-  compositionofwater: "/images/products/water.webp",
-  compositionoffire: "/images/products/fire.webp",
-  compositionofair: "/images/products/air.webp",
-  compositionofaether: "/images/products/aether.webp",
-  aesthloswildoakhoney: "/images/honeys/wild-oak-honey.webp",
-  aesthlosforesthoney: "/images/honeys/forest-honey.webp",
-};
+export const OG_IMAGES: Record<Slug, string> = Object.fromEntries(
+  SLUGS.map((s) => [s, `/og/${s || "home"}.jpg`]),
+) as Record<Slug, string>;

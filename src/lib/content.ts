@@ -42,7 +42,7 @@ export function pageMetadata(lang: Lang, slug: Slug, ogImage?: string): Metadata
       title: override?.title ?? page.meta.ogTitle ?? title,
       description: override ? description : page.meta.ogDescription ?? description,
       locale: locale.ogLocale,
-      images: ogSrc ? [{ url: ogSrc }] : undefined,
+      images: ogSrc ? [{ url: ogSrc, width: 1200, height: 630 }] : undefined,
     },
     twitter: {
       card: "summary_large_image",

@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   // Keep Wix-style URLs: /ourphilosophy (no trailing slash).
   trailingSlash: false,
   images: { unoptimized: true },
+  // one branded 404 page for both language root layouts
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

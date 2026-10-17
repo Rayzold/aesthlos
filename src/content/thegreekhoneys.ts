@@ -110,7 +110,7 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
     {
       "type": "pdf",
       "text": "Διαβάστε Εδώ",
-      "href": "wixfile:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
+      "href": "pdf:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
     },
     {
       "type": "text",
@@ -419,7 +419,7 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
     {
       "type": "pdf",
       "text": "Hier lesen",
-      "href": "wixfile:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
+      "href": "pdf:21375d_64d52d0eb9de4b8ebb210f34ad4cb305.pdf"
     },
     {
       "type": "text",

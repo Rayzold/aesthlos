@@ -23,7 +23,7 @@ export const VIDEOS: Record<string, string> = {
 
 /** Resolve a link captured from Wix to its new local target. */
 export function resolveHref(href: string, lang: "el" | "de" = "el"): string {
-  if (href.startsWith("wixfile:")) return FILES[href.slice(8)] ?? href;
+  if (href.startsWith("pdf:")) return FILES[href.slice("pdf:".length)] ?? href;
   // Live-site bugs fixed per owner decision (see CLAUDE.md)
   if (href === "mailto:info@melimuses.gr") return "mailto:info@aesthlos.com";
   if (href.startsWith("https://www.google.com/search")) return "tel:+302130144422";
