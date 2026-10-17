@@ -54,9 +54,9 @@ export default function Header({ lang }: { lang: Lang }) {
             src="/images/shared/logo-white-02.webp"
             alt="Aesthlos Therafoods logo"
             width={141}
-            height={51}
+            height={49}
             priority
-            className="h-[51px] w-[141px]"
+            className="h-auto w-[141px]"
           />
         </Link>
 

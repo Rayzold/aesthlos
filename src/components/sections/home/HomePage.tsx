@@ -5,9 +5,8 @@ import { pathFor } from "@/content/site";
 import type { Lang } from "@/content/types";
 import RichText from "@/components/content/RichText";
 import BlurText from "@/components/ui/BlurText";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import Magnet from "@/components/ui/Magnet";
-import ScrollReveal from "@/components/ui/ScrollReveal";
 import ShinyText from "@/components/ui/ShinyText";
 import BackgroundVideo from "@/components/media/BackgroundVideo";
 import Parallax from "@/components/media/Parallax";
@@ -136,18 +135,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
           <div className="relative z-10">
             <blockquote className="text-[20px] italic leading-[1.2] text-gold sm:text-[23px]">
               {splitQuote(c.about.quote).map((line, i) => (
-                <ScrollReveal
-                  key={i}
-                  baseOpacity={0.15}
-                  baseRotation={0}
-                  blurStrength={3}
-                  containerClassName="!my-0"
-                  mode="enter"
-                  duration={0.9}
-                  textClassName="!text-[20px] sm:!text-[23px] !font-normal !leading-[1.2]"
-                >
-                  {line}
-                </ScrollReveal>
+                <BlurText key={i} text={line} animateBy="words" direction="bottom" delay={70} className="block" />
               ))}
             </blockquote>
             <FadeContent delay={0.3}>

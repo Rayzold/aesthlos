@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 /**
@@ -26,21 +27,23 @@ export default function BackgroundVideo({ src, poster, className = "" }: { src: 
     return () => io.disconnect();
   }, [reduced]);
 
-  if (reduced) {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={poster} alt="" aria-hidden className={`absolute inset-0 h-full w-full object-cover ${className}`} />;
-  }
+  // The poster is a real (responsive) <img> painted immediately; the video fades in over it once playing.
   return (
-    <video
-      ref={ref}
-      className={`absolute inset-0 h-full w-full object-cover ${className}`}
-      src={src}
-      poster={poster}
-      muted
-      loop
-      playsInline
-      preload="none"
-      aria-hidden
-    />
+    <>
+      <Image src={poster} alt="" aria-hidden fill sizes="100vw" className={`object-cover ${className}`} />
+      {!reduced && (
+        <video
+          ref={ref}
+          className={`absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ${className}`}
+          src={src}
+          muted
+          loop
+          playsInline
+          preload="none"
+          aria-hidden
+          onPlaying={(e) => e.currentTarget.classList.remove("opacity-0")}
+        />
+      )}
+    </>
   );
 }

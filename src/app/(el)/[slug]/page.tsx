@@ -1,11 +1,11 @@
-import PageForSlug from "@/components/sections/PageForSlug";
+import PageForSlug, { OWN_ROUTES } from "@/components/sections/PageForSlug";
 import { SLUGS, type Slug } from "@/content/site";
 import { pageMetadata } from "@/lib/content";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return SLUGS.filter((s) => s !== "").map((slug) => ({ slug }));
+  return SLUGS.filter((s) => s !== "" && !(OWN_ROUTES as readonly string[]).includes(s)).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

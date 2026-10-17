@@ -5,7 +5,7 @@ import { SITE_URL, pathFor } from "@/content/site";
 import type { Lang, Run } from "@/content/types";
 import RichText from "@/components/content/RichText";
 import BlurText from "@/components/ui/BlurText";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import { pageDescription } from "@/lib/content";
 import { resolveHref } from "@/lib/media";
 

@@ -8,6 +8,8 @@ export default function GreekRootLayout({ children }: { children: React.ReactNod
   return (
     <html lang="el">
       <head>
+        <link rel="preload" href="/fonts/roboto-condensed-greek-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/roboto-condensed-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         {/* Old Wix German URLs (?lang=de) -> /de/... (static-host friendly; hosts can also redirect server-side) */}
         <script
           dangerouslySetInnerHTML={{

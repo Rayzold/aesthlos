@@ -2,7 +2,7 @@ import Link from "next/link";
 import { compositionTiles } from "@/content/thecompositions";
 import { pathFor } from "@/content/site";
 import type { Lang } from "@/content/types";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import TiltedCard from "@/components/ui/TiltedCard";
 import FixedBackground from "@/components/media/FixedBackground";
 
@@ -20,8 +20,9 @@ export default function CompositionsPage({ lang }: { lang: Lang }) {
               <Link href={pathFor(lang, t.slug)} className="group block">
                 <div className="aspect-square border border-grey-line bg-black">
                   <TiltedCard
-                    imageSrc={t.image}
+                    imageSrc={t.image.replace(/\.webp$/, "-w640.webp")}
                     altText={t.alt}
+                    imageFetchPriority={i < 3 ? "high" : undefined}
                     containerWidth="100%"
                     containerHeight="100%"
                     imageWidth="100%"

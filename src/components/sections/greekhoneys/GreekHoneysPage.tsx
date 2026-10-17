@@ -3,7 +3,7 @@ import { greekHoneys, type EditorialBlock } from "@/content/thegreekhoneys";
 import type { Lang } from "@/content/types";
 import RichText from "@/components/content/RichText";
 import BlurText from "@/components/ui/BlurText";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import FixedBackground from "@/components/media/FixedBackground";
 import Parallax from "@/components/media/Parallax";
 import { imageFor, resolveHref } from "@/lib/media";

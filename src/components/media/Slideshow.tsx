@@ -112,11 +112,13 @@ function Lightbox({
   labels: Labels;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
   const n = images.length;
 
   useEffect(() => {
     const d = ref.current;
     d?.showModal();
+    closeRef.current?.focus(); // start on "Close", not on the first arrow
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") setIndex((i) => (i + 1) % n);
       if (e.key === "ArrowLeft") setIndex((i) => (i - 1 + n) % n);
@@ -147,8 +149,8 @@ function Lightbox({
         <NavButton side="left" label={labels.prev} onClick={() => setIndex((i) => (i - 1 + n) % n)} />
         <NavButton side="right" label={labels.next} onClick={() => setIndex((i) => (i + 1) % n)} />
         <button
+          ref={closeRef}
           type="button"
-          autoFocus
           onClick={onClose}
           aria-label={labels.close}
           className="absolute top-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-2xl hover:bg-white/20 hover:text-gold"

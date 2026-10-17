@@ -11,7 +11,8 @@ PROJECT: Rebuild https://www.aesthlos.com (currently on Wix) as a self-owned, st
 ## Stack
 - Next.js (App Router) + TypeScript + Tailwind CSS, `output: 'export'` (pure static HTML, deployable to any host).
 - React Bits components in TS-TW variant, installed into src/components/ui/ via `npx shadcn@latest add @react-bits/<Name>-TS-TW`. Always check the exact component name on reactbits.dev first; some names in reactbits-guide.md may differ from the real library (e.g. TiltedCard, DecryptedText).
-- next/image with `unoptimized: true` (static export), images converted to WebP/AVIF at build time with sharp.
+- next/image with a custom loader (src/lib/image-loader.ts) that points at pre-generated WebP width variants (`npm run images`, scripts/image-variants.mjs); widths must match next.config.ts deviceSizes/imageSizes.
+- Designed pages have their own route folders (not [slug]) so each ships only its own JS; [slug] serves product/raw pages.
 
 ## Motion rules (premium = restrained)
 - Read reactbits-guide.md. Follow its "audit before you animate" rule: motion supports the content, never competes with it.

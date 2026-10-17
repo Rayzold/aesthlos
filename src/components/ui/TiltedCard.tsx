@@ -21,6 +21,8 @@ export interface TiltedCardLayerProps {
 
 export interface TiltedCardProps {
   imageSrc?: string;
+  /** Added for Aesthlos: fetch priority of the main image (LCP tuning). */
+  imageFetchPriority?: 'high' | 'low' | 'auto';
   altText?: string;
   captionText?: string;
   containerHeight?: number | string;
@@ -145,6 +147,7 @@ export const TiltedCardLayer = ({ depth = 20, className = '', style, children }:
 
 const TiltedCard = ({
   imageSrc,
+  imageFetchPriority,
   altText = 'Tilted card image',
   captionText = '',
   containerHeight = '300px',
@@ -617,6 +620,7 @@ const TiltedCard = ({
               className="pointer-events-none absolute block max-w-none object-cover"
               src={imageSrc}
               alt={altText}
+              fetchPriority={imageFetchPriority}
               draggable={false}
               style={
                 {

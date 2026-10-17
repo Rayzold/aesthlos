@@ -358,6 +358,8 @@ const SplitText = ({
         wordsClass: 'split-word',
         charsClass: 'split-char',
         reduceWhiteSpace: false,
+        // Aesthlos: no aria-label on a plain <span> (invalid ARIA); callers provide an sr-only copy instead.
+        aria: 'none',
         onSplit: (self: GSAPSplitText) => {
           pieces = [self[unit], self.chars, self.words, self.lines].find(list => list.length) || [];
           movers = (mask && self.masks?.length === pieces.length ? self.masks : pieces) as HTMLElement[];

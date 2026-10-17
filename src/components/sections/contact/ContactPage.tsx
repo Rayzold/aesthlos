@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { contact } from "@/content/contact";
 import type { Lang } from "@/content/types";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import ContactForm from "./ContactForm";
 
 /** /contact — honey photo left, form right, company details below (as on Wix). No map on the live page. */

@@ -7,7 +7,7 @@ export default function CompositionCard({ href, image, title }: { href: string; 
     <Link href={href} className="group block focus-visible:outline-offset-4">
       <div className="aspect-square border border-grey-line">
         <TiltedCard
-          imageSrc={image}
+          imageSrc={image.replace(/\.webp$/, "-w400.webp")}
           altText=""
           containerWidth="100%"
           containerHeight="100%"

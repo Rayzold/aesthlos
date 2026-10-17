@@ -3,7 +3,7 @@ import { honeyCollection } from "@/content/honeycollection";
 import { pathFor } from "@/content/site";
 import type { Lang } from "@/content/types";
 import BlurText from "@/components/ui/BlurText";
-import FadeContent from "@/components/ui/FadeContent";
+import FadeContent from "@/components/motion/Reveal";
 import Magnet from "@/components/ui/Magnet";
 import BackgroundVideo from "@/components/media/BackgroundVideo";
 

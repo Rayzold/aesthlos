@@ -293,6 +293,11 @@ const BlurText = ({
 
   useEffect(() => {
     if (phase !== 'from') return undefined;
+    // Aesthlos: reduced motion → show the text immediately, no animation.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setPhase('rest');
+      return undefined;
+    }
     if (trigger === 'load') {
       setPhase('in');
       return undefined;
