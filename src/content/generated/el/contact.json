@@ -24,7 +24,8 @@
    "tag": "h5",
    "runs": [
     {
-     "text": "Φόρμα επικοινωνίας"
+     "text": "Φόρμα επικοινωνίας",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -34,7 +35,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Ευχαριστούμε για την επικοινωνία!"
+     "text": "Ευχαριστούμε για την επικοινωνία!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -44,7 +46,12 @@
    "tag": "p",
    "runs": [
     {
-     "text": "AESTHLOS THERAFOODS Κουτάλας Ανδρέας"
+     "text": "AESTHLOS THERAFOODS ",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "Κουτάλας Ανδρέας",
+     "color": "#2A2A2A"
     }
    ]
   },
@@ -54,7 +61,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Εταιρεία Παραγωγής Τροφίμων"
+     "text": "Εταιρεία Παραγωγής Τροφίμων",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -64,7 +72,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Ομήρου 14, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα"
+     "text": "Ομήρου 14, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -74,10 +83,12 @@
    "tag": "p",
    "runs": [
     {
-     "text": "E: "
+     "text": "E: ",
+     "color": "#FFFFFF"
     },
     {
      "text": "info@aesthlos.com",
+     "color": "#FFFFFF",
      "href": "mailto:info@melimuses.gr"
     }
    ]
@@ -88,10 +99,12 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Τ: +30 "
+     "text": "Τ: +30 ",
+     "color": "#FFFFFF"
     },
     {
      "text": "213014 4422",
+     "color": "#FFFFFF",
      "href": "https://www.google.com/search?q=%CF%85%CE%B3%CE%B5%CE%B9%CE%BF%CE%B3%CE%BD%CF%89%CE%B9%CF%83%CE%B9%CE%B1&client=safari&rls=en&sxsrf=ALeKk0302pgXtSvgXge8wYcBM4tnu-1q0g%3A1617799972041&ei=JKttYNyAAtC1sAfztqzoCg&oq=%CF%85%CE%B3%CE%B5%CE%B9%CE%BF%CE%B3%CE%BD%CF%89%CE%B9%CF%83%CE%B9%CE%B1&gs_lcp=Cgdnd3Mtd2l6EAM6AggAOggILhDHARCvAToLCC4QxwEQrwEQkwI6BAgAEAo6BQgAEMsBOgsILhDHARCvARDLAToNCC4QxwEQrwEQDRCTAjoECAAQDToKCC4QxwEQrwEQDToNCC4QxwEQrwEQExCTAjoGCAAQChATOgoIABANEAoQHhATOgYIABAeEBM6DAgAEA0QBRAKEB4QEzoCCCZQyPYzWJ-GNGCriTRoAHACeAGAAaMCiAGSEpIBBTAuOS40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwjcoprFluzvAhXQGuwKHXMbC60Q4dUDCAw&uact=5#"
     }
    ]

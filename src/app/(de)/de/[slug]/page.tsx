@@ -1,6 +1,6 @@
-import RawPage from "@/components/content/RawPage";
+import PageForSlug from "@/components/sections/PageForSlug";
 import { SLUGS, type Slug } from "@/content/site";
-import { getPage, pageMetadata } from "@/lib/content";
+import { pageMetadata } from "@/lib/content";
 
 export const dynamicParams = false;
 
@@ -15,5 +15,5 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return <RawPage page={getPage("de", slug as Slug)} />;
+  return <PageForSlug lang="de" slug={slug as Slug} />;
 }

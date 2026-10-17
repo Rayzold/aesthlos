@@ -21,6 +21,7 @@ SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "archive" / "html"
 OUT = ROOT / "src" / "content" / "generated"
 
 THEME = {}  # color_N -> hex, filled from the HTML theme vars
+FONT_COLORS = {}  # font_N class -> hex (Wix text presets carry a default colour)
 WIX_ID = re.compile(r"[0-9a-f]{6}_[0-9a-f]{32}(?:f000|~mv2)?\.(?:png|jpe?g|gif|webp|svg|avif)", re.I)
 
 
@@ -28,6 +29,8 @@ def load_theme(html: str):
     for n, rgb in re.findall(r"--color_(\d+):(\d+,\d+,\d+)", html):
         r, g, b = (int(x) for x in rgb.split(","))
         THEME[f"color_{n}"] = f"#{r:02X}{g:02X}{b:02X}"
+    for f, c in re.findall(r"\.font_(\d+)\{[^}]*?color:rgb\(var\(--color_(\d+)\)\)", html):
+        FONT_COLORS[f"font_{f}"] = THEME.get(f"color_{c}")
 
 
 def norm_href(href: str) -> str:
@@ -60,6 +63,11 @@ def style_of(node, block):
             if href is None and el.name == "a" and el.get("href"):
                 href = norm_href(el["href"])
         el = el.parent
+    if color is None:
+        for c in block.get("class", []) or []:
+            if c in FONT_COLORS and FONT_COLORS[c]:
+                color = FONT_COLORS[c]
+                break
     return color, bool(bold), href
 
 
@@ -76,7 +84,7 @@ def runs_of(block: Tag):
             continue
         color, bold, href = style_of(node, block)
         run = {"text": text}
-        if color and color not in ("#FFFFFF",):
+        if color:
             run["color"] = color
         if bold:
             run["bold"] = True

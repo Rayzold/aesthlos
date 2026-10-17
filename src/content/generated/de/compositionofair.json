@@ -28,7 +28,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "MENTALE FUNKTION"
+     "text": "MENTALE FUNKTION",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -38,21 +39,24 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Botanische Komposition aus "
+     "text": "Botanische Komposition aus ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Blütenhonig ",
      "color": "#9374B4"
     },
     {
-     "text": "mit "
+     "text": "mit ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Ginkgo Biloba",
      "color": "#9374B4"
     },
     {
-     "text": ", der die Konzentration, das Gedächtnis und die geistige Leistungsfähigkeit verbessert."
+     "text": ", der die Konzentration, das Gedächtnis und die geistige Leistungsfähigkeit verbessert.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -62,7 +66,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Ginkgo Biloba gilt als das Kraut des Gedächtnisses und ist definitiv der beste Freund des Gehirns, da es sämtliche mentalen Funktionen unterstützt."
+     "text": "Ginkgo Biloba gilt als das Kraut des Gedächtnisses und ist definitiv der beste Freund des Gehirns, da es sämtliche mentalen Funktionen unterstützt.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -72,28 +77,32 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Rezeptur wird durch "
+     "text": "Die Rezeptur wird durch ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Walnüsse ",
      "color": "#9374B4"
     },
     {
-     "text": "(welche die Form des Gehirns haben) und die Komposition anderer Superfoods ergänzt und mit Zutaten wie "
+     "text": "(welche die Form des Gehirns haben) und die Komposition anderer Superfoods ergänzt und mit Zutaten wie ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Kurkuma",
      "color": "#9374B4"
     },
     {
-     "text": " und "
+     "text": " und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Zimt",
      "color": "#9374B4"
     },
     {
-     "text": " verfeinert."
+     "text": " verfeinert.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -115,7 +124,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Ein “gehäufter” Teelöffel gut aufgelöst in warmer Pflanzenmilch oder Joghurt nach einer Mahlzeit, oder vor jeder geistigen Tätigkeit."
+     "text": "Ein “gehäufter” Teelöffel gut aufgelöst in warmer Pflanzenmilch oder Joghurt nach einer Mahlzeit, oder vor jeder geistigen Tätigkeit.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -125,7 +135,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Empfohlene Menge: bis zu 3 Mal pro Tag, bei sehr anspruchsvollen Phasen des Gehirns. Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen."
+     "text": "Empfohlene Menge: bis zu 3 Mal pro Tag, bei sehr anspruchsvollen Phasen des Gehirns. Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -147,21 +158,26 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Blütenhonig, Ahornsirup, Ginkgo biloba,  "
+     "text": "Blütenhonig, Ahornsirup, Ginkgo biloba,  ",
+     "color": "#FFFFFF"
     },
     {
      "text": "geriebene Walnüsse",
+     "color": "#FFFFFF",
      "bold": true
     },
     {
-     "text": ","
+     "text": ",",
+     "color": "#FFFFFF"
     },
     {
      "text": " ",
+     "color": "#FFFFFF",
      "bold": true
     },
     {
-     "text": "Rosa canina, Schisandra chinensis, Cinnamomum zeylanicum, Curcuma longa"
+     "text": "Rosa canina, Schisandra chinensis, Cinnamomum zeylanicum, Curcuma longa",
+     "color": "#FFFFFF"
     }
    ]
   },

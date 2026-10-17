@@ -66,7 +66,8 @@
 
 html { background: var(--bg); color-scheme: dark; scroll-padding-top: var(--header-h); }
 body {
-  background: var(--bg);
+  /* transparent so fixed page backgrounds (FixedBackground, z -10) show; html paints the black canvas */
+  background: transparent;
   color: var(--text);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;

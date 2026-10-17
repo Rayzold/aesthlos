@@ -48,7 +48,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "\"Aesthlos\" kann aus dem Altgriechischen übersetzt werden als:"
+     "text": "\"Aesthlos\" kann aus dem Altgriechischen übersetzt werden als:",
+     "color": "#FFFFFF"
     },
     {
      "text": "“der Starke, der Würdige, der Beste seiner Art”.",
@@ -62,7 +63,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Dies ist das Wort, das die fünf Produkte dieser Serie charaktisiert, die fünf Rezepte der Stärke. Fünf, wie die Urelemente der Erschaffung der Welt, laut der altgriechischen Philosophie."
+     "text": "Dies ist das Wort, das die fünf Produkte dieser Serie charaktisiert, die fünf Rezepte der Stärke. Fünf, wie die Urelemente der Erschaffung der Welt, laut der altgriechischen Philosophie.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -172,7 +174,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "“Endiamesos” (Vermittler) ist ein griechisches Wort, was"
+     "text": "“Endiamesos” (Vermittler) ist ein griechisches Wort, was",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -194,7 +197,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die “Erzähler” der esoterischen Traditionen übertragen uns, dass diese “Vermittler” als die größten Alchemisten in der Menschheitsgeschichte galten, während die vermittelten Elemente ihrer magischen und heilenden Rezepturen zur Erhaltung der Gesundheit dienten."
+     "text": "Die “Erzähler” der esoterischen Traditionen übertragen uns, dass diese “Vermittler” als die größten Alchemisten in der Menschheitsgeschichte galten, während die vermittelten Elemente ihrer magischen und heilenden Rezepturen zur Erhaltung der Gesundheit dienten.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -204,7 +208,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "In unserer Geschichte haben ein moderner Erzähler zusammen mit dem Vermittler mit Liebe und Kunst, davon geträumt, eine excellende Ernährungslinie aus Botanischen Zusammensetzungen auf Honigbasis, die ganzheitlich auf die Stärkung der Gesundheit abzielen."
+     "text": "In unserer Geschichte haben ein moderner Erzähler zusammen mit dem Vermittler mit Liebe und Kunst, davon geträumt, eine excellende Ernährungslinie aus Botanischen Zusammensetzungen auf Honigbasis, die ganzheitlich auf die Stärkung der Gesundheit abzielen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -214,10 +219,15 @@
    "tag": "h2",
    "runs": [
     {
-     "text": "Therafoods /"
+     "text": "Therafoods /",
+     "color": "#FFC824"
     },
     {
-     "text": "\n\nNext Generation Foods"
+     "text": "\n"
+    },
+    {
+     "text": "\nNext Generation Foods",
+     "color": "#FFC824"
     }
    ]
   },
@@ -235,7 +245,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Dichte und Struktur unserer Produkte hängt von"
+     "text": "Die Dichte und Struktur unserer Produkte hängt von",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -245,7 +256,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "der jeweiligen Produktionscharge ab, da die verwendeten Rohstoffe zu 100% aus biologischem Anbau stammen und nicht “standardisiert” werden können."
+     "text": "der jeweiligen Produktionscharge ab, da die verwendeten Rohstoffe zu 100% aus biologischem Anbau stammen und nicht “standardisiert” werden können.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -255,7 +267,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Biene ist ein lebendiger Organismus, der unseren Respekt verdient und nicht ausgebeutet werden darf."
+     "text": "Die Biene ist ein lebendiger Organismus, der unseren Respekt verdient und nicht ausgebeutet werden darf.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -265,7 +278,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Unsere Bienen befinden sich in Natura- Gebieten in Höhenlagen bis zu 1300 Metern und der Produktionsprozess unterliegt denGrundsätzen eines streng biologischen und ökologischen Ansatzes."
+     "text": "Unsere Bienen befinden sich in Natura- Gebieten in Höhenlagen bis zu 1300 Metern und der Produktionsprozess unterliegt denGrundsätzen eines streng biologischen und ökologischen Ansatzes.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -275,7 +289,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die jährliche Produktion ist begrenzt und hängt jedes Mal von der Fähigkeit der Natur ab, uns ihre reichen Gaben auf optimale Weise zu gewähren."
+     "text": "Die jährliche Produktion ist begrenzt und hängt jedes Mal von der Fähigkeit der Natur ab, uns ihre reichen Gaben auf optimale Weise zu gewähren.",
+     "color": "#FFFFFF"
     }
    ]
   },

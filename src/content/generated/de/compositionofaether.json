@@ -32,7 +32,8 @@
      "color": "#FFC824"
     },
     {
-     "text": "fünfte Element)"
+     "text": "fünfte Element)",
+     "color": "#2A2A2A"
     }
    ],
    "color": "#FFC824"
@@ -43,7 +44,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "HOLISTISCHE WELLNESS"
+     "text": "HOLISTISCHE WELLNESS",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -53,35 +55,40 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Botanische Komposition aus "
+     "text": "Botanische Komposition aus ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Blütenhonig ",
      "color": "#FFC824"
     },
     {
-     "text": "mit "
+     "text": "mit ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Gelée Royale",
      "color": "#FFC824"
     },
     {
-     "text": ", "
+     "text": ", ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Ashwagandha",
      "color": "#FFC824"
     },
     {
-     "text": " und "
+     "text": " und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Schisandra chinensis",
      "color": "#FFC824"
     },
     {
-     "text": ", welche das ganzheitliche Wohlbefinden des Körpers unterstützen und die geistigen und körperlichen Funktionen anregt. Schisandra ist ein absoluter Balancer für den menschlichen Körper. Es wirkt gegen Stress und Müdigkeit und stimuliert das Potential und steigert gleichzeitig ganzheitlich die Leistungsfähigkeit in Geist und Körper."
+     "text": ", welche das ganzheitliche Wohlbefinden des Körpers unterstützen und die geistigen und körperlichen Funktionen anregt. Schisandra ist ein absoluter Balancer für den menschlichen Körper. Es wirkt gegen Stress und Müdigkeit und stimuliert das Potential und steigert gleichzeitig ganzheitlich die Leistungsfähigkeit in Geist und Körper.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -91,35 +98,40 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Komposition wird durch "
+     "text": "Die Komposition wird durch ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Rosa canina",
      "color": "#FFC824"
     },
     {
-     "text": " und "
+     "text": " und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Noni-Saft ",
      "color": "#FFC824"
     },
     {
-     "text": "bereichert und mit "
+     "text": "bereichert und mit ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Pollen",
      "color": "#FFC824"
     },
     {
-     "text": " und "
+     "text": " und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Zimt",
      "color": "#FFC824"
     },
     {
-     "text": " verfeinert."
+     "text": " verfeinert.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -141,7 +153,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Maximale Tagesdosis: ein bis zwei “gehäufte” Teelöffel, ausreichend zerkaut, vorzugsweise vor einer körperlichen Aktivität, oder in kleineren Mengen mehrmals täglich, zunächst unter der Zunge und dann ausreichend zerkaut."
+     "text": "Maximale Tagesdosis: ein bis zwei “gehäufte” Teelöffel, ausreichend zerkaut, vorzugsweise vor einer körperlichen Aktivität, oder in kleineren Mengen mehrmals täglich, zunächst unter der Zunge und dann ausreichend zerkaut.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -151,7 +164,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen."
+     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -173,7 +187,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Blütenhonig, Ashwagandha - Withania somnifera , Schisandra chinensis , Gelée Royale, Pollen, Noni Saft, Rosa canina, Cinnamomum zeylanicum"
+     "text": "Blütenhonig, Ashwagandha - Withania somnifera , Schisandra chinensis , Gelée Royale, Pollen, Noni Saft, Rosa canina, Cinnamomum zeylanicum",
+     "color": "#FFFFFF"
     }
    ]
   },

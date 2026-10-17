@@ -28,7 +28,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "EMOTIONALE HARMONIE"
+     "text": "EMOTIONALE HARMONIE",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -38,21 +39,24 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Botanische Komposition aus "
+     "text": "Botanische Komposition aus ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Blütenhonig",
      "color": "#0081BD"
     },
     {
-     "text": ", "
+     "text": ", ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Ashwagandha",
      "color": "#0081BD"
     },
     {
-     "text": " und einer Mischung aus Superfoods, die das emotionale Gleichgewicht fördert, zur Stressresistenz beiträgt und die Herz-Kreislauf-Funktion unterstützt."
+     "text": " und einer Mischung aus Superfoods, die das emotionale Gleichgewicht fördert, zur Stressresistenz beiträgt und die Herz-Kreislauf-Funktion unterstützt.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -62,7 +66,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Das Sanskrit-Wort “ashwah” bedeutet “Pferd” und das Wort “gandha\" bedeutet “Geruch”. Die Inder behaupten, dass das Kraut den Geruch eines verschwitzten Pferdes hat und daher jedem, der es konsumiert, die Kraft eines Hengstes verleiht."
+     "text": "Das Sanskrit-Wort “ashwah” bedeutet “Pferd” und das Wort “gandha\" bedeutet “Geruch”. Die Inder behaupten, dass das Kraut den Geruch eines verschwitzten Pferdes hat und daher jedem, der es konsumiert, die Kraft eines Hengstes verleiht.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -72,7 +77,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Ashwagandha, das geheimnisvolle Kraut des Ostens, ist der ultimative Schutz gegen den täglichen Stress und sorgt für körperliches und emotionales Wohlbefinden."
+     "text": "Ashwagandha, das geheimnisvolle Kraut des Ostens, ist der ultimative Schutz gegen den täglichen Stress und sorgt für körperliches und emotionales Wohlbefinden.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -82,28 +88,32 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Komposition wird durch "
+     "text": "Die Komposition wird durch ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Schisandra",
      "color": "#0081BD"
     },
     {
-     "text": " verstärkt, während sie durch “mittlere” Zutaten wie "
+     "text": " verstärkt, während sie durch “mittlere” Zutaten wie ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Sesam",
      "color": "#0081BD"
     },
     {
-     "text": " und "
+     "text": " und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Zimt ",
      "color": "#0081BD"
     },
     {
-     "text": "ausgeglichen wird."
+     "text": "ausgeglichen wird.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -125,7 +135,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Verteilen Sie es wie folgt auf warmem Brot: entweder direkt, einen Löffel auf einer kleinen Scheibe Vollkornbrot, oder die gleiche Menge, aufgelöst in hochwertigem Honig auf Brotscheiben. Andernfalls können Sie einen halben Teelöffel, sehr gut gekaut, zwischen den Mahlzeiten essen."
+     "text": "Verteilen Sie es wie folgt auf warmem Brot: entweder direkt, einen Löffel auf einer kleinen Scheibe Vollkornbrot, oder die gleiche Menge, aufgelöst in hochwertigem Honig auf Brotscheiben. Andernfalls können Sie einen halben Teelöffel, sehr gut gekaut, zwischen den Mahlzeiten essen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -135,7 +146,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Empfohlener Verzehr: zwei- bis dreimal pro Tag."
+     "text": "Empfohlener Verzehr: zwei- bis dreimal pro Tag.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -145,7 +157,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen."
+     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -167,14 +180,17 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Blütenhonig, Ahornsirup, Vollkorn-Tahini "
+     "text": "Blütenhonig, Ahornsirup, Vollkorn-Tahini ",
+     "color": "#FFFFFF"
     },
     {
      "text": "(Sesampaste)",
+     "color": "#FFFFFF",
      "bold": true
     },
     {
-     "text": ", Aschwagandha - Withania somnifera, Cinnamomum zeylanicum , Schisandra chinensis"
+     "text": ", Aschwagandha - Withania somnifera, Cinnamomum zeylanicum , Schisandra chinensis",
+     "color": "#FFFFFF"
     }
    ]
   },

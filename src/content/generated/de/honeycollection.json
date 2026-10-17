@@ -29,7 +29,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Unsere Honige"
+     "text": "Unsere Honige",
+     "color": "#FFFFFF"
     }
    ]
   },

@@ -37,7 +37,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Unsere Rezepturen verbinden die ganzheitliche Unterstützung der fünf Ebenen der Gesundheit (oder einfach “ganzheitliche Gesundheitsunterstützung”) mit einem einzigartigen Geschmackserlebnis, das den Körper vor allen Krankheitsarten schützt. Sie basieren alle auf den besten ernährungsphysiologischen Sorten griechischen Honigs und werden durch hochwertige Kräuter und Früchte aus biologischem Anbau ergänzt."
+     "text": "Unsere Rezepturen verbinden die ganzheitliche Unterstützung der fünf Ebenen der Gesundheit (oder einfach “ganzheitliche Gesundheitsunterstützung”) mit einem einzigartigen Geschmackserlebnis, das den Körper vor allen Krankheitsarten schützt. Sie basieren alle auf den besten ernährungsphysiologischen Sorten griechischen Honigs und werden durch hochwertige Kräuter und Früchte aus biologischem Anbau ergänzt.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -47,7 +48,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die chemischen Analysen, die unsere Honige begleiten, bescheinigen ihre erstklassige Qualität und sind grundlegende Garantie unseres Strebens nach dem Außergewöhnlichem, während die Kräuter und alle Zwischenprodukte ausschließlich aus biologischem Anbau stammen."
+     "text": "Die chemischen Analysen, die unsere Honige begleiten, bescheinigen ihre erstklassige Qualität und sind grundlegende Garantie unseres Strebens nach dem Außergewöhnlichem, während die Kräuter und alle Zwischenprodukte ausschließlich aus biologischem Anbau stammen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -57,10 +59,19 @@
    "tag": "h2",
    "runs": [
     {
-     "text": "Griechische Honige:"
+     "text": "Griechische Honige:",
+     "color": "#FFC824"
     },
     {
-     "text": "\n\ndas Wunder der griechischen Natur mit den meisten Antioxidantien!"
+     "text": "\n"
+    },
+    {
+     "text": "\n",
+     "color": "#FFC824"
+    },
+    {
+     "text": "das Wunder der griechischen Natur mit den meisten Antioxidantien!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -70,7 +81,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Honig ist ein besonderer Fall in der Lebensmittelindustrie. Er ist buchstäblich ein Wunder der Natur."
+     "text": "Honig ist ein besonderer Fall in der Lebensmittelindustrie. Er ist buchstäblich ein Wunder der Natur.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -80,7 +92,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Er ist eines der wertvollsten, nahrhaftesten und gesündesten Lebensmittel, die es gibt, und de Gründe,"
+     "text": "Er ist eines der wertvollsten, nahrhaftesten und gesündesten Lebensmittel, die es gibt, und de Gründe,",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -90,7 +103,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "die diese Behauptung stützen, sind zahllos. Einer der wichtigsten Gründe ist eine besondere Eigenschaft des Honigs: seine antioxidative Wirkung!"
+     "text": "die diese Behauptung stützen, sind zahllos. Einer der wichtigsten Gründe ist eine besondere Eigenschaft des Honigs: seine antioxidative Wirkung!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -100,7 +114,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Chrysoula Tananaki, Assistenzprofessorin und Leiterin des Labors für Bienenzucht und Seidenraupenzucht an der Fakultät für Landwirtschaft der Aristoteles-Universität Thessaloniki, stellte die Ergebnisse einer größeren Forschungsarbeit der Fakultät vor, die belegen, dass Honig eine antioxidative Wirkung hat. Das heißt, er bekämpft freie Radikale, die für die Entartung von Zellen verantwortlich sind, die wiederum Krebstumore verursachen."
+     "text": "Chrysoula Tananaki, Assistenzprofessorin und Leiterin des Labors für Bienenzucht und Seidenraupenzucht an der Fakultät für Landwirtschaft der Aristoteles-Universität Thessaloniki, stellte die Ergebnisse einer größeren Forschungsarbeit der Fakultät vor, die belegen, dass Honig eine antioxidative Wirkung hat. Das heißt, er bekämpft freie Radikale, die für die Entartung von Zellen verantwortlich sind, die wiederum Krebstumore verursachen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -110,7 +125,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die antioxidative Aktivität der verschiedenen Honigsorten ist jedoch nicht gleich hoch. Wilder Eichenhonig und die meisten Waldhonige (Honigtau) sind die reichsten Honige, sowohl an Antioxidantien als auch an Phenolen!"
+     "text": "Die antioxidative Aktivität der verschiedenen Honigsorten ist jedoch nicht gleich hoch. Wilder Eichenhonig und die meisten Waldhonige (Honigtau) sind die reichsten Honige, sowohl an Antioxidantien als auch an Phenolen!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -175,7 +191,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Untersuchung von Tananaki, Dimou & Thrasivoulou (2015) beweist die wohltuende Wirkung von griechischem Honigauf den menschlichen Körper. Sie sammelten 48 verschiedene Honigproben aus ganz Griechenland und von allen blühenden Pflanzen, und niemand hätte erwartet, dass ihre Zusammensetzung so viele Eigenschaften verbirgt, viel besser sogar als die viel beworbenen Honige aus dem Ausland, wie z.B. Manuka-Honig!"
+     "text": "Die Untersuchung von Tananaki, Dimou & Thrasivoulou (2015) beweist die wohltuende Wirkung von griechischem Honigauf den menschlichen Körper. Sie sammelten 48 verschiedene Honigproben aus ganz Griechenland und von allen blühenden Pflanzen, und niemand hätte erwartet, dass ihre Zusammensetzung so viele Eigenschaften verbirgt, viel besser sogar als die viel beworbenen Honige aus dem Ausland, wie z.B. Manuka-Honig!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -197,7 +214,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "In einer Zeit, in der Lebensmittel durch die wahllose Ausbeutung und Verschmutzung natürlicher Ressourcen immer mehr herabgestuft wird, während ihre Nährstoffe durch geschmackslose  Nahrungsergänzungsmittel ersetzt werden, haben  wir eine  Reihe  Kräuterkompositionen entwickelt, die von der antiken griechischen Tradition inspiriert sind. Unsere Kompositionen verbinden eine ganzheitliche Unterstützung der fünf Ebenen der Gesundheit mit einem einzigartigen Geschmackserlebnis, das jede Mahlzeit bereichern kann."
+     "text": "In einer Zeit, in der Lebensmittel durch die wahllose Ausbeutung und Verschmutzung natürlicher Ressourcen immer mehr herabgestuft wird, während ihre Nährstoffe durch geschmackslose  Nahrungsergänzungsmittel ersetzt werden, haben  wir eine  Reihe  Kräuterkompositionen entwickelt, die von der antiken griechischen Tradition inspiriert sind. Unsere Kompositionen verbinden eine ganzheitliche Unterstützung der fünf Ebenen der Gesundheit mit einem einzigartigen Geschmackserlebnis, das jede Mahlzeit bereichern kann.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -207,7 +225,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Honig ist heute eines der wenigen Produkte, das nicht durch die menschliche Entwicklung, industrielle Aktivitäten, Pestizide usw. beeinträchtigt wurde. Die Biene sammelt nur die reinen Blüten und produziert “Schätze”, wo immer sie zu finden sind. Das Einzige, worauf man achten sollte, ist, ihn direkt von einem zertifizierten und vetrauenswürdigen Imker zu beziehen und nicht standardisiert von einer großen Handelskette- denn dort könnten sich die Dinge ändern."
+     "text": "Honig ist heute eines der wenigen Produkte, das nicht durch die menschliche Entwicklung, industrielle Aktivitäten, Pestizide usw. beeinträchtigt wurde. Die Biene sammelt nur die reinen Blüten und produziert “Schätze”, wo immer sie zu finden sind. Das Einzige, worauf man achten sollte, ist, ihn direkt von einem zertifizierten und vetrauenswürdigen Imker zu beziehen und nicht standardisiert von einer großen Handelskette- denn dort könnten sich die Dinge ändern.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -217,7 +236,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Zusammenfassend lässt sich sagen, dass Griechenland einen Schatz in seinen Händen hält."
+     "text": "Zusammenfassend lässt sich sagen, dass Griechenland einen Schatz in seinen Händen hält.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -227,7 +247,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Honig, der nirgendwo sonst auf der Welt produziert wird. Und wenn in Zukunft etwas getan werden sollte, dann ist es, unseren Reichtum zu präsentieren und eine Werbung zu machen, die jeden Winkel der Welt erreicht. Um unser Griechenland an die Spitze zu bringen. Denn es hat es verdient!"
+     "text": "Honig, der nirgendwo sonst auf der Welt produziert wird. Und wenn in Zukunft etwas getan werden sollte, dann ist es, unseren Reichtum zu präsentieren und eine Werbung zu machen, die jeden Winkel der Welt erreicht. Um unser Griechenland an die Spitze zu bringen. Denn es hat es verdient!",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -251,6 +272,7 @@
     },
     {
      "text": " Wilder Eichenhonig/ Waldhonig",
+     "color": "#FFFFFF",
      "bold": true
     }
    ],
@@ -278,7 +300,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Unser Honig wird von Imkerfamilien geerntet, die mindestens ein halbes Jahrhundert Tradition in der Imkerei haben, und dabei völlig natürliche und biologische Methoden anwenden. Der Transport der Bienen in verschiedenen Regionen Griechenlands ermöglicht das Sammeln von Honig aus verschiedenen Blüten und Honigtau, wodurch eine natürliche Apotheke entsteht, die den menschlichen Körper schützt und seine Gesundheit bewahrt. Das Hauptziel ist, dass die Produkte der Bienen rein und roh direkt aus dem Bienenstock, buchstäblich mit absolutem Respekt aus dem Haus der Bienen, in die Hände des Verbrauchers gelangen."
+     "text": "Unser Honig wird von Imkerfamilien geerntet, die mindestens ein halbes Jahrhundert Tradition in der Imkerei haben, und dabei völlig natürliche und biologische Methoden anwenden. Der Transport der Bienen in verschiedenen Regionen Griechenlands ermöglicht das Sammeln von Honig aus verschiedenen Blüten und Honigtau, wodurch eine natürliche Apotheke entsteht, die den menschlichen Körper schützt und seine Gesundheit bewahrt. Das Hauptziel ist, dass die Produkte der Bienen rein und roh direkt aus dem Bienenstock, buchstäblich mit absolutem Respekt aus dem Haus der Bienen, in die Hände des Verbrauchers gelangen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -288,7 +311,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Ernte unseres Honigs (Wald - und Wilder Eichenhonig) erfolgt hauptsächlich im gebirgigen Ilia, im berühmten Wald von Folio, in einer Höhe von mehr als 600 Metern, aber auch im gebirgigen Euböa, dem hoch aufragenden Dirfi in einer Höhe von 1000 Metern. Auch der Blütenhonig stammt aus dem gebirgigen Arkadien und Euböa."
+     "text": "Die Ernte unseres Honigs (Wald - und Wilder Eichenhonig) erfolgt hauptsächlich im gebirgigen Ilia, im berühmten Wald von Folio, in einer Höhe von mehr als 600 Metern, aber auch im gebirgigen Euböa, dem hoch aufragenden Dirfi in einer Höhe von 1000 Metern. Auch der Blütenhonig stammt aus dem gebirgigen Arkadien und Euböa.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -298,7 +322,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Der Wald von Folio ist nach dem Kentaur Follo aus der griechischen Mythologie benannt. Jeder, der sich dort aufhält, versteht, warum sie damals diesem Ort einen solchen Glanz verliehen haben. Es ist ein einzigartiger Eichenwald auf dem Balkan, einer der größten in Europa mit einer Fläche von 42000 Hektar und Teil des Natura-2000-Netzes."
+     "text": "Der Wald von Folio ist nach dem Kentaur Follo aus der griechischen Mythologie benannt. Jeder, der sich dort aufhält, versteht, warum sie damals diesem Ort einen solchen Glanz verliehen haben. Es ist ein einzigartiger Eichenwald auf dem Balkan, einer der größten in Europa mit einer Fläche von 42000 Hektar und Teil des Natura-2000-Netzes.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -308,7 +333,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die gesamte Hochebene von Folio wird von aufrechten, geraden Eichen dominiert, den die Einheimischen “Kapeli” nennen, was so viel wie ein “dichter Wald” oder “üppiger Wald” bedeutet. Kapeli wird auch die “Terrasse von Ilia” genannt. Wenn sie sich außerhalb des Waldes befinden, werden sie verstehen, warum. An vielen Stellen wird der Himmel von den riesigen Eichen verdeckt. Es handelt sich um einen der seltensten Wälder, der auf dem Balkan einzigartig ist."
+     "text": "Die gesamte Hochebene von Folio wird von aufrechten, geraden Eichen dominiert, den die Einheimischen “Kapeli” nennen, was so viel wie ein “dichter Wald” oder “üppiger Wald” bedeutet. Kapeli wird auch die “Terrasse von Ilia” genannt. Wenn sie sich außerhalb des Waldes befinden, werden sie verstehen, warum. An vielen Stellen wird der Himmel von den riesigen Eichen verdeckt. Es handelt sich um einen der seltensten Wälder, der auf dem Balkan einzigartig ist.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -318,7 +344,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Eichen sind hoch, manche gerade wie Zypressen und andere dick und mehrstämmig. Nach Angaben der Einheimischen gibt es in diesem Wald 5 Millionen Bäume (!). Der Wald befindet sich auf einer Hochebene in 660 m Höhe. Er ist einer der ältesten Wälder Europas, vielleicht weil die Eiche nicht so leicht brennt wie die Kiefer, was dem Wald hilft, sich vor Bränden zu schützen."
+     "text": "Die Eichen sind hoch, manche gerade wie Zypressen und andere dick und mehrstämmig. Nach Angaben der Einheimischen gibt es in diesem Wald 5 Millionen Bäume (!). Der Wald befindet sich auf einer Hochebene in 660 m Höhe. Er ist einer der ältesten Wälder Europas, vielleicht weil die Eiche nicht so leicht brennt wie die Kiefer, was dem Wald hilft, sich vor Bränden zu schützen.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -328,7 +355,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Hochebene von Folio ist ein geschützter Lebensraum von Natura 2000."
+     "text": "Die Hochebene von Folio ist ein geschützter Lebensraum von Natura 2000.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -338,7 +366,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Der Wald von Steni hingegen gehört zu den 19 ästhetischen Wäldern Griechenlands, die sich durch ihre ökologische Bedeutung, ihre wohltuenden Eigenschaften für Gesundheit, Seele und Geist, ihre natürliche Schönheit und die Möglichkeit für den Besucher, sich zu erholen und mit der Natur eins zu werden, auszeichnen. Auch die Vegetation von Dirfi ist einzigartig mit ausgedehnten Fichten-, Eichen-, Kastanien-und Kiefernwäldern. Die Gebiete von Dirfi , also Steni-Wald und Delphi sind ebenfalls geschützte Natura-2000-Gebiete."
+     "text": "Der Wald von Steni hingegen gehört zu den 19 ästhetischen Wäldern Griechenlands, die sich durch ihre ökologische Bedeutung, ihre wohltuenden Eigenschaften für Gesundheit, Seele und Geist, ihre natürliche Schönheit und die Möglichkeit für den Besucher, sich zu erholen und mit der Natur eins zu werden, auszeichnen. Auch die Vegetation von Dirfi ist einzigartig mit ausgedehnten Fichten-, Eichen-, Kastanien-und Kiefernwäldern. Die Gebiete von Dirfi , also Steni-Wald und Delphi sind ebenfalls geschützte Natura-2000-Gebiete.",
+     "color": "#FFFFFF"
     }
    ]
   },

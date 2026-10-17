@@ -28,7 +28,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "SEXUELLE ENERGIE & KNOCHENGESUNDHEIT"
+     "text": "SEXUELLE ENERGIE & KNOCHENGESUNDHEIT",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -38,35 +39,40 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Botanische Komposition aus "
+     "text": "Botanische Komposition aus ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Blütenhonig",
      "color": "#E21C21"
     },
     {
-     "text": " mit "
+     "text": " mit ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Pollen",
      "color": "#E21C21"
     },
     {
-     "text": ", "
+     "text": ", ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Gelée Royale",
      "color": "#E21C21"
     },
     {
-     "text": ", "
+     "text": ", ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Maca ",
      "color": "#E21C21"
     },
     {
-     "text": "und eine Mischung aus Superfoods, die die sexuelle Leistungsfâhigkeit und das Verlangen erhöht, die Fruchtbarkeit verbessert und vor Osteoporose schützt. Maca ist ein ausgezeichnetes natürliches Aphrodisiakum, das als sehr nahrhaftes Lebensmittel gilt, und erheblich die Energie, Kraft und Ausdauer im gesamten menschlichen Körper steigert."
+     "text": "und eine Mischung aus Superfoods, die die sexuelle Leistungsfâhigkeit und das Verlangen erhöht, die Fruchtbarkeit verbessert und vor Osteoporose schützt. Maca ist ein ausgezeichnetes natürliches Aphrodisiakum, das als sehr nahrhaftes Lebensmittel gilt, und erheblich die Energie, Kraft und Ausdauer im gesamten menschlichen Körper steigert.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -76,21 +82,24 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Die Komposition wird durch Gelée Royale und "
+     "text": "Die Komposition wird durch Gelée Royale und ",
+     "color": "#FFFFFF"
     },
     {
      "text": "Ingwer ",
      "color": "#E21C21"
     },
     {
-     "text": "bereichert, während mit Pollen und"
+     "text": "bereichert, während mit Pollen und",
+     "color": "#FFFFFF"
     },
     {
      "text": " Zimt ",
      "color": "#E21C21"
     },
     {
-     "text": "ausgeglichen wird."
+     "text": "ausgeglichen wird.",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -112,7 +121,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Maximale Tagesdosis: 1- 2 “gehäufte” Teelöffel pro"
+     "text": "Maximale Tagesdosis: 1- 2 “gehäufte” Teelöffel pro",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -122,7 +132,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Tag, gut zerkaut, vorzugsweise vor körperlicher Betätigung, oder in kleineren Mengen mehrmals täglich, zunächst unter der Zunge und dann ausreichend zerkaut. Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen"
+     "text": "Tag, gut zerkaut, vorzugsweise vor körperlicher Betätigung, oder in kleineren Mengen mehrmals täglich, zunächst unter der Zunge und dann ausreichend zerkaut. Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -144,7 +155,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Blütenhonig,  Ahornsirup, Maca – Lepidium meyenii,  Pollen,"
+     "text": "Blütenhonig,  Ahornsirup, Maca – Lepidium meyenii,  Pollen,",
+     "color": "#FFFFFF"
     }
    ]
   },
@@ -154,7 +166,8 @@
    "tag": "p",
    "runs": [
     {
-     "text": "Gelée Royale, Zingiber officinale, Cinnamomum zeylanicum"
+     "text": "Gelée Royale, Zingiber officinale, Cinnamomum zeylanicum",
+     "color": "#FFFFFF"
     }
    ]
   },
