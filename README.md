@@ -33,7 +33,7 @@ URLs: Greek pages keep the exact Wix paths (`/ourphilosophy`, `/copy-of-the-comp
 
 ## Fonts
 
-- Body: **Roboto Condensed** (free, Greek) — stand-in for PF DinText Pro, which the old site used without a web licence.
+- Body: **Roboto Condensed** (free, Greek) — stand-in for PF DinText Pro (commercial Parachute font; no web licence for self-hosting).
 - Display: **Aka-Acid-Quinfo** (free font, self-hosted).
 - "Αesthlos Infinity" heading: **Questrial** (Google Fonts, OFL).
 
