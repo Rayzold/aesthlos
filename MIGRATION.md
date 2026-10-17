@@ -13,13 +13,31 @@
 | Site (apex) | A → `185.230.63.171`, `185.230.63.107`, `185.230.63.186` (Wix) | Θα αντικατασταθεί. |
 | Site (www) | CNAME → `cdn3.wixdns.net` (Wix) | Θα αντικατασταθεί. |
 | **Email (MX)** | `10 mail.aesthlos.com` | ⚠️ Πρέπει να μεταφερθεί ακριβώς. |
-| mail.aesthlos.com | A → `148.251.14.105` | ⚠️ Πρέπει να μεταφερθεί ακριβώς, **χωρίς proxy** (γκρι σύννεφο). |
-| SPF | TXT `v=spf1 +a +mx include:_spf.fastmail.gr +ip6:2a01:4f8:201:7368::2 -all` | ⚠️ Μεταφέρεται ακριβώς. Ο πάροχος email είναι το **fastmail.gr**. |
+| mail.aesthlos.com | A → `148.251.14.105` (= `server.linux50.papaki.gr`) | ⚠️ Ο mail server του **papaki**. Μεταφέρεται ακριβώς, **χωρίς proxy** (γκρι σύννεφο). |
+| webmail.aesthlos.com | A → `148.251.14.105` | ⚠️ Το webmail του papaki. Επίσης **χωρίς proxy**. |
+| SPF | TXT `v=spf1 +a +mx include:_spf.fastmail.gr +ip6:2a01:4f8:201:7368::2 -all` | ⚠️ Μεταφέρεται ακριβώς. Το `fastmail.gr` είναι η υποδομή email του papaki. |
 | DKIM | TXT στο `default._domainkey` (`v=DKIM1; p=MIGfMA0…`) | ⚠️ Αντιγράφεται **ολόκληρη** η τιμή από τον πίνακα DNS του Wix. |
 | DMARC | — (δεν υπάρχει) | Προαιρετικό, για αργότερα. |
+| Άλλα ονόματα email (autodiscover, autoconfig, smtp, imap, pop, SRV) | — (δεν υπάρχουν) | Ελέγχθηκε 17/10/2026. Το email εξαρτάται **μόνο** από τις 5 εγγραφές MX, mail, webmail, SPF και DKIM. |
+| **Πάροχος email και hosting** | **papaki.gr** | Το πακέτο του papaki **μένει ενεργό**, γιατί εκεί είναι το email. Αλλάζει μόνο το ποιος διαχειρίζεται το DNS. |
 | Google Search Console | Επαλήθευση με meta tag (υπάρχει ήδη στο νέο site) | Δεν χρειάζεται νέα επαλήθευση. |
 
 Η πρόταση είναι το DNS να περάσει στο **Cloudflare** (δωρεάν), αφού εκεί θα φιλοξενείται και το site. Το domain μένει στο papaki.
+
+---
+
+## Προετοιμασία email (papaki): πριν την αλλαγή
+
+Το email (info@aesthlos.com) φιλοξενείται στο **papaki** (server `linux50.papaki.gr`). Η μεταφορά **δεν αλλάζει τίποτα στο papaki**. Οι 5 εγγραφές του email απλώς αντιγράφονται αυτούσιες από το DNS του Wix στο DNS του Cloudflare. Αρκεί:
+
+1. **Γκρι συννεφάκι (DNS only)** στα `mail` και `webmail`. Με πορτοκαλί, το Cloudflare θα προσπαθούσε να περάσει την κίνηση email από το proxy του, που δέχεται μόνο web, και το email θα σταματούσε.
+2. **Τα προγράμματα email** (Outlook, κινητό κ.λπ.) **δεν χρειάζονται καμία αλλαγή**. Είτε χρησιμοποιούν `mail.aesthlos.com` είτε `linux50.papaki.gr`, και τα δύο δείχνουν στον ίδιο server.
+3. **Δοκιμή «πριν» και «μετά»** (5 λεπτά, γίνεται και τις δύο φορές):
+   - Από ένα Gmail στείλτε email **προς** info@aesthlos.com και ελέγξτε ότι φτάνει (webmail: https://webmail.aesthlos.com ή το πρόγραμμα email).
+   - Από το info@aesthlos.com απαντήστε **προς** το Gmail.
+   - Στο Gmail ανοίξτε το email → ⋮ → **Show original** και ελέγξτε ότι γράφει **SPF: PASS** και **DKIM: PASS**. Αν ήταν PASS πριν και είναι PASS μετά, το email μεταφέρθηκε σωστά.
+4. **Στοιχεία πρόσβασης papaki** διαθέσιμα τη μέρα της αλλαγής: login στο papaki.gr (εκεί αλλάζουν οι nameservers) και ο κωδικός του info@aesthlos.com (για τη δοκιμή).
+5. Αν κάτι δεν πάει καλά με το email: επαναφορά (τέλος του οδηγού) ή υποστήριξη του papaki, με την πληροφορία «το DNS του aesthlos.com μεταφέρθηκε στο Cloudflare, ο mail server είναι ο linux50.papaki.gr».
 
 ---
 
@@ -47,9 +65,12 @@
    - `A   mail  →  148.251.14.105`: **Proxy status: DNS only (γκρι σύννεφο)**. Αυτό είναι απαραίτητο για το email.
    - `TXT aesthlos.com  →  v=spf1 …` (SPF), όπως ακριβώς είναι
    - `TXT default._domainkey  →  v=DKIM1; p=…` (DKIM), ολόκληρη η τιμή
-   - Ό,τι άλλο υπήρχε στο Wix (webmail, autodiscover κ.λπ.), επίσης με **DNS only**
+   - `A   webmail  →  148.251.14.105`: επίσης **DNS only**
+   - Τα A του apex και το CNAME του www (Wix): επίσης **DNS only** μέχρι το Βήμα 4, ώστε το Wix site να δουλεύει όπως σήμερα
 3. Τις εγγραφές του site (A του apex προς 185.230.63.x και CNAME του www προς Wix) **τις αφήνετε προς το παρόν**. Έτσι το Wix site συνεχίζει να δουλεύει κατά την αλλαγή.
 4. Το Cloudflare θα δώσει **δύο nameservers** (π.χ. `xxx.ns.cloudflare.com`).
+
+> 🟡 **Σε εξέλιξη (17/10/2026):** Το aesthlos.com προστέθηκε στο Cloudflare (Free plan). Το «Bot Preference Sync» είναι **κλειστό**, ώστε να μην αλλάξει το robots.txt. Το Cloudflare βρήκε 9 εγγραφές, όλες σωστές: 3×A apex (Wix), A `mail`, A `webmail`, CNAME `www` (Wix), MX, SPF, DKIM. **Εκκρεμεί:** οι 6 πρώτες (apex ×3, mail, webmail, www) πρέπει να γυρίσουν από 🟠 Proxied σε ⚪ **DNS only** και μετά να πατηθεί *Continue*. Οι nameservers στο papaki **δεν** έχουν αλλάξει.
 
 ## Βήμα 3: Αλλαγή nameservers στο papaki
 
@@ -94,7 +115,8 @@
 
 ## Βήμα 7: Κλείσιμο του Wix (μόνο αφού όλα δουλεύουν 1–2 εβδομάδες)
 
-- Το domain **δεν** είναι στο Wix, οπότε η ακύρωση του Premium plan δεν το επηρεάζει. Ούτε το email, που είναι στο fastmail.gr.
+- Το domain **δεν** είναι στο Wix, οπότε η ακύρωση του Premium plan δεν το επηρεάζει. Ούτε το email, που είναι στο papaki.
+- ⚠️ **Δεν ακυρώνεται** το πακέτο email/hosting του papaki.
 - Πριν την ακύρωση: export από το Wix ό,τι μένει μόνο εκεί (μηνύματα της παλιάς φόρμας, contacts, analytics).
 - Ακύρωση: Wix → **Subscriptions** → Premium plan → Cancel. Αν θέλετε, ο λογαριασμός και το site μένουν ως δωρεάν, ανενεργά.
 
@@ -104,6 +126,6 @@
 
 ## Προαιρετικά, αργότερα
 
-- **DMARC:** Βελτιώνει την παράδοση των email. Πριν προστεθεί, ρωτήστε το fastmail.gr ποια τιμή προτείνει (π.χ. `v=DMARC1; p=none; rua=mailto:info@aesthlos.com`).
-- **SPF `+a`:** Επιτρέπει αποστολή email από την IP του site. Μετά τη μεταφορά, η IP αυτή είναι του Cloudflare, που δεν στέλνει email. Δεν χαλάει κάτι. Το fastmail.gr μπορεί να επιβεβαιώσει αν το `+a` χρειάζεται.
+- **DMARC:** Βελτιώνει την παράδοση των email. Πριν προστεθεί, ρωτήστε το papaki ποια τιμή προτείνει (π.χ. `v=DMARC1; p=none; rua=mailto:info@aesthlos.com`).
+- **SPF `+a`:** Επιτρέπει αποστολή email από την IP του site. Μετά τη μεταφορά, η IP αυτή είναι του Cloudflare, που δεν στέλνει email. Δεν χαλάει κάτι. Το papaki μπορεί να επιβεβαιώσει αν το `+a` χρειάζεται.
 - **Μεταφορά του domain στο Cloudflare Registrar:** Δεν χρειάζεται. Αν θέλετε φθηνότερη ανανέωση, στο papaki ξεκλειδώνετε το transfer lock, παίρνετε τον κωδικό EPP/auth code και κάνετε transfer από το Cloudflare. Καλύτερα όχι κοντά στη λήξη (04/2027).
