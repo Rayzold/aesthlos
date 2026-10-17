@@ -35,7 +35,9 @@
 1. Δημιουργία λογαριασμού στο https://dash.cloudflare.com (δωρεάν).
 2. **Workers & Pages → Create → Pages → Connect to Git** → σύνδεση GitHub → repo `Rayzold/aesthlos`.
 3. Ρυθμίσεις: Framework preset **None**, Build command `npm run build`, Build output directory `out`, Production branch `main`.
-4. Το site ανοίγει στο `https://aesthlos.pages.dev` (ή κάτι παρόμοιο). Εκεί γίνεται ο έλεγχος πριν πειραχτεί το domain.
+4. Το site ανοίγει στο `https://aesthlos.pages.dev`. Εκεί γίνεται ο έλεγχος πριν πειραχτεί το domain.
+
+> ✅ **Έγινε στις 17/10/2026.** Το project `aesthlos` στο Cloudflare Pages συνδέθηκε με το GitHub (`Rayzold/aesthlos`, branch `main`) και ανεβαίνει αυτόματα σε κάθε push. Ελέγχθηκαν και οι 28 σελίδες (ελληνικά και γερμανικά), η σελίδα 404, το sitemap, το robots.txt, οι ανακατευθύνσεις `?lang=de` και `.html`, και τα headers για cache και ασφάλεια.
 
 ## Βήμα 2: Το domain στο Cloudflare (το site μένει ακόμα στο Wix)
 
