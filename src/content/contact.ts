@@ -16,7 +16,7 @@ export const contact: Record<
     emailLabel: string;
     phoneLabel: string;
     phoneDisplay: string;
-    errors: { required: string; email: string; send: string; notConfigured: string };
+    errors: { required: string; email: string; send: string };
     sending: string;
   }
 > = {
@@ -36,7 +36,6 @@ export const contact: Record<
       required: "Συμπληρώστε αυτό το πεδίο.",
       email: "Συμπληρώστε ένα έγκυρο email.",
       send: "Κάτι πήγε στραβά. Δοκιμάστε ξανά ή στείλτε email στο info@aesthlos.com.",
-      notConfigured: "Η φόρμα δεν είναι ακόμα ενεργή. Στείλτε μας email στο info@aesthlos.com.",
     },
     sending: "Αποστολή…",
   },
@@ -56,7 +55,6 @@ export const contact: Record<
       required: "Bitte füllen Sie dieses Feld aus.",
       email: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       send: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie an info@aesthlos.com.",
-      notConfigured: "Das Formular ist noch nicht aktiv. Bitte schreiben Sie uns an info@aesthlos.com.",
     },
     sending: "Wird gesendet…",
   },

@@ -1,21 +1,28 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { contact } from "@/content/contact";
 import type { Lang } from "@/content/types";
 
 /**
- * Contact form, same fields as the Wix form. The site is static, so submissions go to Web3Forms
- * (https://web3forms.com), which emails them to the address the access key was created with
- * (info@aesthlos.com). Key: NEXT_PUBLIC_WEB3FORMS_KEY at build time — see README.
+ * Contact form, same fields as the Wix form, styled like the site. The site is static, so the
+ * data is posted straight to the owner's Jotform form "Aesthlos – Επικοινωνία / Contact"
+ * (EU servers). Jotform stores every message and emails a notification.
+ * Field names (qN_…) come from the Jotform form; if questions are added/removed there, update JOTFORM.
  */
-const KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+const JOTFORM = {
+  id: "262894956014063",
+  action: "https://eu-submit.jotform.com/submit/262894956014063",
+  fields: { name: "q2_q2_textbox0", email: "q3_q3_email1", message: "q4_q4_textarea2", lang: "q5_q5_textbox3" },
+  honeypot: "website", // Jotform's own spam trap: must stay empty
+};
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function ContactForm({ lang }: { lang: Lang }) {
   const t = contact[lang];
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const mountedAt = useRef(Date.now());
 
   function validate(form: HTMLFormElement) {
     const data = new FormData(form);
@@ -35,20 +42,21 @@ export default function ContactForm({ lang }: { lang: Lang }) {
       (form.querySelector(`[name="${Object.keys(e)[0]}"]`) as HTMLElement | null)?.focus();
       return;
     }
-    if (!KEY) {
-      setStatus("error");
-      setErrors({ form: t.errors.notConfigured });
-      return;
-    }
     setStatus("sending");
     const data = new FormData(form);
-    data.append("access_key", KEY);
-    data.append("subject", lang === "el" ? "Νέο μήνυμα από το aesthlos.com" : "Neue Nachricht von aesthlos.com (DE)");
-    data.append("from_name", "aesthlos.com");
+    const body = new URLSearchParams({
+      formID: JOTFORM.id,
+      simple_spc: `${JOTFORM.id}-${JOTFORM.id}`,
+      timeToSubmit: String(Math.round((Date.now() - mountedAt.current) / 1000)),
+      [JOTFORM.fields.name]: String(data.get("name") ?? "").trim(),
+      [JOTFORM.fields.email]: String(data.get("email") ?? "").trim(),
+      [JOTFORM.fields.message]: String(data.get("message") ?? "").trim(),
+      [JOTFORM.fields.lang]: lang,
+      [JOTFORM.honeypot]: String(data.get("website") ?? ""),
+    });
     try {
-      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data, headers: { Accept: "application/json" } });
-      const json = await res.json();
-      if (!json.success) throw new Error(json.message);
+      // Cross-origin "simple" POST: the response is opaque, so a network error is the only failure we can see.
+      await fetch(JOTFORM.action, { method: "POST", mode: "no-cors", body });
       setStatus("sent");
       form.reset();
     } catch {
@@ -62,8 +70,8 @@ export default function ContactForm({ lang }: { lang: Lang }) {
 
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-2.5" aria-describedby="form-status">
-      {/* honeypot: hidden from people; bots fill it and Web3Forms drops the submission */}
-      <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+      {/* honeypot: hidden from people; bots fill it and Jotform treats the submission as spam */}
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
       <Field id="name" error={errors.name}>
         <label htmlFor="cf-name" className="sr-only">
           {t.fields.name}

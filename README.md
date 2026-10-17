@@ -73,15 +73,13 @@ leaves the previous version online.
 ## Deploy
 
 The build is a plain static folder (`out/`), so any static host works. Settings for all of them:
-**build command** `npm run build`, **output folder** `out`, **Node** 22 (from `.node-version`),
-**environment variable** `NEXT_PUBLIC_WEB3FORMS_KEY` (see "Contact form").
+**build command** `npm run build`, **output folder** `out`, **Node** 22 (from `.node-version`). No environment variables are needed.
 
 ### Cloudflare Pages (chosen)
 
 1. https://dash.cloudflare.com → Workers & Pages → Create → Pages → **Connect to Git** → pick `Rayzold/aesthlos`.
 2. Framework preset: *None*. Build command `npm run build`, output directory `out`, production branch `main`.
-3. Settings → Variables and Secrets: add `NEXT_PUBLIC_WEB3FORMS_KEY` (Production and Preview) → redeploy.
-4. The site is live at `https://<project>.pages.dev`. Custom domain: see `MIGRATION.md`.
+3. The site is live at `https://<project>.pages.dev`. Custom domain: see `MIGRATION.md`.
 
 `public/_headers` sets caching and security headers. Clean URLs (`/ourphilosophy` → `ourphilosophy.html`) and the
 404 page work out of the box. Old Wix German links (`?lang=de`) are redirected in the browser by the site itself and,
@@ -89,7 +87,7 @@ once the domain is on Cloudflare, by a Redirect Rule (see `MIGRATION.md`).
 
 ### Netlify (alternative)
 
-Add site → Import from Git → build `npm run build`, publish `out`, add the environment variable.
+Add site → Import from Git → build `npm run build`, publish `out`.
 `public/_headers` works as is. For the server-side `?lang=de` redirect add a `public/_redirects` file:
 
 ```
@@ -99,7 +97,7 @@ Add site → Import from Git → build `npm run build`, publish `out`, add the e
 
 ### Vercel (alternative)
 
-Import the repo → Framework *Next.js* (static export is detected) → add the environment variable.
+Import the repo → Framework *Next.js* (static export is detected).
 Headers from `_headers` are not read by Vercel; add a `vercel.json` if needed:
 
 ```json
@@ -126,15 +124,15 @@ Headers from `_headers` are not read by Vercel; add a `vercel.json` if needed:
 - Display: **Aka-Acid-Quinfo** (free font, self-hosted).
 - "Αesthlos Infinity" heading: **Questrial** (Google Fonts, OFL).
 
-## Contact form (Web3Forms)
+## Contact form (Jotform)
 
-The site is static, so the contact form posts to [Web3Forms](https://web3forms.com) (free), which emails each
-message to the address the access key was created with.
+The site is static, so the contact form (designed like the rest of the site) posts its data straight to the Jotform form
+**"Aesthlos – Επικοινωνία / Contact"** (EU servers, form id `262894956014063`). Jotform stores every message
+(Jotform → My Forms → Submissions / Inbox) and sends an email notification to info@aesthlos.com.
 
-1. Go to https://web3forms.com, enter **info@aesthlos.com**, and confirm the email you receive — it contains the access key.
-2. Locally: copy `.env.example` to `.env.local` and paste the key after `NEXT_PUBLIC_WEB3FORMS_KEY=`.
-3. On the host (Cloudflare Pages / Netlify / Vercel): add the same variable `NEXT_PUBLIC_WEB3FORMS_KEY` in the project's
-   environment variables and redeploy (the key is baked in at build time).
-
-Without a key the form still validates, but tells visitors to email info@aesthlos.com instead.
-Spam protection: hidden honeypot field (`botcheck`) — Web3Forms discards submissions that fill it.
+- Endpoint and field names live at the top of `src/components/sections/contact/ContactForm.tsx` (`JOTFORM`).
+  If questions are added, removed or re-created in Jotform, their names change (`q2_…`): open the form, inspect the
+  inputs, and update `JOTFORM.fields`.
+- The fourth field ("Γλώσσα") records whether the visitor used the Greek (`el`) or German (`de`) site.
+- Spam protection: a hidden honeypot field (`website`, Jotform's own spam trap) plus Jotform's spam filter.
+- Notifications: Jotform → form → Settings → Emails → Notification email (recipient info@aesthlos.com, reply-to = sender).

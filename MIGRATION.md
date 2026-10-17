@@ -35,8 +35,7 @@
 1. Δημιουργία λογαριασμού στο https://dash.cloudflare.com (δωρεάν).
 2. **Workers & Pages → Create → Pages → Connect to Git** → σύνδεση GitHub → repo `Rayzold/aesthlos`.
 3. Ρυθμίσεις: Framework preset **None**, Build command `npm run build`, Build output directory `out`, Production branch `main`.
-4. **Settings → Variables and Secrets** → `NEXT_PUBLIC_WEB3FORMS_KEY` = το κλειδί από το web3forms.com → **Retry deployment**.
-5. Το site ανοίγει στο `https://aesthlos.pages.dev` (ή κάτι παρόμοιο). Εκεί γίνεται ο έλεγχος πριν πειραχτεί το domain.
+4. Το site ανοίγει στο `https://aesthlos.pages.dev` (ή κάτι παρόμοιο). Εκεί γίνεται ο έλεγχος πριν πειραχτεί το domain.
 
 ## Βήμα 2: Το domain στο Cloudflare (το site μένει ακόμα στο Wix)
 
@@ -79,7 +78,7 @@
 - [ ] Όλα τα παλιά URL ανοίγουν: `/ourphilosophy`, `/thegreekhoneys`, `/thecompositions`, `/honeycollection`, `/contact`, `/copy-of-the-composition-of-earth`, `/compositionofearth`, `/compositionofwater`, `/compositionoffire`, `/compositionofair`, `/compositionofaether`, `/aesthloswildoakhoney`, `/aesthlosforesthoney`
 - [ ] `/ourphilosophy?lang=de` → `/de/ourphilosophy`
 - [ ] Ανύπαρκτη σελίδα → σελίδα 404 του site
-- [ ] Φόρμα επικοινωνίας → το μήνυμα φτάνει στο info@aesthlos.com
+- [ ] Φόρμα επικοινωνίας → το μήνυμα εμφανίζεται στο Jotform (Submissions) και η ειδοποίηση φτάνει στο info@aesthlos.com
 - [ ] Email προς/από info@aesthlos.com
 - [ ] Lighthouse (κινητό) όπως στο Phase 7
 - [ ] Προεπισκόπηση συνδέσμου σε Facebook/Viber (https://developers.facebook.com/tools/debug/)
