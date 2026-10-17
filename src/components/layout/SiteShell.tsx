@@ -7,7 +7,7 @@ export default function SiteShell({ lang, children }: { lang: Lang; children: Re
   return (
     <>
       <Header lang={lang} />
-      <main id="main" tabIndex={-1} className="outline-none">
+      <main id="main" tabIndex={-1} className="outline-none lg:pb-footer">
         {children}
       </main>
       <Footer lang={lang} />

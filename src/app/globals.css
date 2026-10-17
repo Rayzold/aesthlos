@@ -55,7 +55,14 @@
 
   --container-site: 980px;
   --spacing-header: 96px;
+  --spacing-footer: 52px;
+
+  --animate-kenburns: kenburns 12s ease-out both;
+  --animate-logo-in: logo-in 1.2s 0.2s ease-out both;
 }
+
+@keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.05); } }
+@keyframes logo-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
 
 html { background: var(--bg); color-scheme: dark; scroll-padding-top: var(--header-h); }
 body {

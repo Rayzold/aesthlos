@@ -1,8 +1,8 @@
-import RawPage from "@/components/content/RawPage";
-import { getPage, pageMetadata } from "@/lib/content";
+import HomePage from "@/components/sections/home/HomePage";
+import { pageMetadata } from "@/lib/content";
 
 export const metadata = pageMetadata("de", "");
 
-export default function HomePageDe() {
-  return <RawPage page={getPage("de", "")} />;
+export default function HomeDe() {
+  return <HomePage lang="de" />;
 }

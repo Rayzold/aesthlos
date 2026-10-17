@@ -81,7 +81,7 @@ export default function Header({ lang }: { lang: Lang }) {
           </ul>
         </nav>
 
-        <LangSwitch lang={lang} current={current} className="ml-auto hidden lg:flex" />
+        <LangDropdown lang={lang} current={current} />
 
         <button
           type="button"
@@ -146,5 +146,58 @@ function LangSwitch({ lang, current, className = "" }: { lang: Lang; current: st
         </li>
       ))}
     </ul>
+  );
+}
+
+/** Desktop language selector styled like the Wix one: dark grey box "EL ⌄". */
+function LangDropdown({ lang, current }: { lang: Lang; current: string }) {
+  const [open, setOpen] = useState(false);
+  const active = LANGS.find((l) => l.lang === lang)!;
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: MouseEvent | KeyboardEvent) => {
+      if (e instanceof KeyboardEvent && e.key !== "Escape") return;
+      if (e instanceof MouseEvent && (e.target as HTMLElement).closest("[data-lang-dropdown]")) return;
+      setOpen(false);
+    };
+    window.addEventListener("click", close);
+    window.addEventListener("keydown", close);
+    return () => {
+      window.removeEventListener("click", close);
+      window.removeEventListener("keydown", close);
+    };
+  }, [open]);
+  return (
+    <div data-lang-dropdown className="relative ml-auto hidden lg:ml-[8px] lg:block">
+      <button
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label={`${UI[lang].language}: ${active.label}`}
+        onClick={() => setOpen((v) => !v)}
+        className="flex h-[42px] items-center gap-4 rounded-md bg-[#323232] px-3 text-[16px] text-white transition-colors hover:bg-[#3d3d3d]"
+      >
+        {active.label}
+        <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden className={`transition-transform ${open ? "rotate-180" : ""}`}>
+          <path d="M1 1.5 6 6.5l5-5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        </svg>
+      </button>
+      {open && (
+        <ul role="listbox" className="absolute right-0 mt-1 min-w-full overflow-hidden rounded-md bg-[#323232] py-1 text-[16px]">
+          {LANGS.map((l) => (
+            <li key={l.lang} role="option" aria-selected={l.lang === lang}>
+              <Link
+                href={pathFor(l.lang, current)}
+                hrefLang={l.htmlLang}
+                lang={l.htmlLang}
+                className={`block px-3 py-1.5 hover:bg-[#444] ${l.lang === lang ? "text-gold" : "text-white"}`}
+              >
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 }
