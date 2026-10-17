@@ -36,3 +36,16 @@ URLs: Greek pages keep the exact Wix paths (`/ourphilosophy`, `/copy-of-the-comp
 - Body: **Roboto Condensed** (free, Greek) — stand-in for PF DinText Pro, which the old site used without a web licence.
 - Display: **Aka-Acid-Quinfo** (free font, self-hosted).
 - "Αesthlos Infinity" heading: **Questrial** (Google Fonts, OFL).
+
+## Contact form (Web3Forms)
+
+The site is static, so the contact form posts to [Web3Forms](https://web3forms.com) (free), which emails each
+message to the address the access key was created with.
+
+1. Go to https://web3forms.com, enter **info@aesthlos.com**, and confirm the email you receive — it contains the access key.
+2. Locally: copy `.env.example` to `.env.local` and paste the key after `NEXT_PUBLIC_WEB3FORMS_KEY=`.
+3. On the host (Cloudflare Pages / Netlify / Vercel): add the same variable `NEXT_PUBLIC_WEB3FORMS_KEY` in the project's
+   environment variables and redeploy (the key is baked in at build time).
+
+Without a key the form still validates, but tells visitors to email info@aesthlos.com instead.
+Spam protection: hidden honeypot field (`botcheck`) — Web3Forms discards submissions that fill it.

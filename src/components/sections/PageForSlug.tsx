@@ -2,6 +2,7 @@ import type { Slug } from "@/content/site";
 import type { Lang } from "@/content/types";
 import RawPage from "@/components/content/RawPage";
 import { getPage } from "@/lib/content";
+import ContactPage from "./contact/ContactPage";
 import CompositionsPage from "./compositions/CompositionsPage";
 import GreekHoneysPage from "./greekhoneys/GreekHoneysPage";
 import HoneyCollectionPage from "./honeys/HoneyCollectionPage";
@@ -18,6 +19,8 @@ export default function PageForSlug({ lang, slug }: { lang: Lang; slug: Slug }) 
       return <GreekHoneysPage lang={lang} />;
     case "thecompositions":
       return <CompositionsPage lang={lang} />;
+    case "contact":
+      return <ContactPage lang={lang} />;
     case "honeycollection":
       return <HoneyCollectionPage lang={lang} />;
     default:
