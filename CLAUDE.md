@@ -19,6 +19,12 @@ PROJECT: Rebuild https://www.aesthlos.com (currently on Wix) as a self-owned, st
 - Respect prefers-reduced-motion everywhere (render static fallbacks).
 - Lighthouse targets (mobile): Performance >= 90, Accessibility >= 95, SEO 100.
 
+## Owner decisions (2026-10-17, after Phase 1)
+- Body font: PF DinText Pro is a commercial Parachute font with no web license → use a free Google Fonts look-alike with Greek support (show the owner a comparison). Aka-Acid-Quinfo (free) and Questrial (Google) are kept as-is.
+- German: build the German version too, at `/de/<same-slug>`; old `?lang=de` URLs must redirect to it. German copy comes from archive/pages-de (verbatim, it is only partially translated; flag the gaps to the owner, do not invent translations).
+- Fix these live-site bugs: contact email link → mailto:info@aesthlos.com; phone → tel:+302130144422; Infinity tile on /thecompositions links to /copy-of-the-composition-of-earth; og:image on every page.
+- /fullscreen-page and Wix member pages (/my-account etc.) are not migrated.
+
 ## Workflow
 - Work phase by phase (see "Claude Code Prompts - Aesthlos Rebuild.md"); stop after each phase for review.
 - /archive holds the capture of the live Wix site (text, meta, image lists, screenshots, design tokens). It is the source of truth for layout and copy.
