@@ -7,7 +7,7 @@ For each page writes archive/pages/<slug>/:
   images.json  - every image: wix id, original size, alt, display order, local file name
 Also writes archive/images-index.json (all pages).
 
-Usage:  python3 scripts/parse_archive.py [project_root]
+Usage:  python3 scripts/parse_archive.py [project_root] [lang]   (lang=de parses archive/html/de into archive/pages-de)
 """
 import json
 import re
@@ -17,8 +17,9 @@ from pathlib import Path
 from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
-HTML_DIR = ROOT / "archive" / "html"
-OUT_DIR = ROOT / "archive" / "pages"
+LANG = sys.argv[2] if len(sys.argv) > 2 else ""
+HTML_DIR = ROOT / "archive" / "html" / LANG if LANG else ROOT / "archive" / "html"
+OUT_DIR = ROOT / "archive" / (f"pages-{LANG}" if LANG else "pages")
 MEDIA_DIR = ROOT / "archive" / "media"
 
 PATHS = {
@@ -206,7 +207,7 @@ def main():
         index[slug] = images
         print(f"{slug:36s} texts={sum(1 for i in items if i['type']=='text'):3d} "
               f"images={len(images):3d} missing={sum(1 for i in images if not i['downloaded'])}")
-    (ROOT / "archive" / "images-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+    (OUT_DIR.parent / ("images-index.json" if not LANG else f"images-index-{LANG}.json")).write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

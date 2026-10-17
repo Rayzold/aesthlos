@@ -1,0 +1,49 @@
+[
+  {
+    "component": "comp-jye59dn6",
+    "items": [
+      {
+        "image": "21375d_4530e055be6647f8835f3ebfea087c46~mv2.jpg",
+        "title": "Η Σύνθεση του Infinity",
+        "description": "",
+        "alt": "",
+        "link": null
+      },
+      {
+        "image": "21375d_d1cc13c4df624598b1108c2cc1a4a2d5~mv2.jpg",
+        "title": "Η Σύνθεση της Γης",
+        "description": "",
+        "alt": "aesthlos earth composition",
+        "link": "/compositionofearth"
+      },
+      {
+        "image": "21375d_926b539bc53b41dfb94fad31f46c4d51~mv2.jpg",
+        "title": "Η Σύνθεση του Νερού",
+        "description": "",
+        "alt": "aesthlos composition water",
+        "link": "/compositionofwater"
+      },
+      {
+        "image": "21375d_3b0730f1115347b8afb525250fcf0af7~mv2.jpg",
+        "title": "H Σύνθεση της Φωτιάς",
+        "description": "",
+        "alt": "aesthlos composition fire",
+        "link": "/compositionoffire"
+      },
+      {
+        "image": "21375d_c8012382c8654134b023e45926e59264~mv2.jpg",
+        "title": "H Σύνθεση του Αέρα",
+        "description": "",
+        "alt": "aesthlos composition air",
+        "link": "/compositionofair"
+      },
+      {
+        "image": "21375d_b8ec79ea9dd34d19aff2767be7eea77b~mv2.jpg",
+        "title": "H Σύνθεση του Αιθέρα",
+        "description": "",
+        "alt": "aesthlos composition aether",
+        "link": "/compositionofaether"
+      }
+    ]
+  }
+]

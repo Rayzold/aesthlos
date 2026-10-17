@@ -1,0 +1,42 @@
+[
+  {
+    "component": "comp-m48hc4x0",
+    "items": [
+      {
+        "image": "21375d_28c6e932d5a946b4809816aa36651611~mv2.png",
+        "title": "H Σύνθεση της Γης",
+        "description": "",
+        "alt": "",
+        "link": "/compositionofearth"
+      },
+      {
+        "image": "21375d_3ab7426ed12b418fbf94c984a0cf9bff~mv2.png",
+        "title": "Η Σύνθεση του Νερού",
+        "description": "",
+        "alt": "",
+        "link": "/compositionofwater"
+      },
+      {
+        "image": "21375d_794fe81cf2b14a2d802bcce00a4bfd9f~mv2.png",
+        "title": "Η Σύνθεση της Φωτιάς",
+        "description": "",
+        "alt": "",
+        "link": "/compositionoffire"
+      },
+      {
+        "image": "21375d_e1a3e973eaf3476094e6024fb5571886~mv2.png",
+        "title": "Η Σύνθεση του Αέρα",
+        "description": "",
+        "alt": "",
+        "link": "/compositionofair"
+      },
+      {
+        "image": "21375d_6cee9aa3fd114d599dd72643434db2ae~mv2.png",
+        "title": "Η Σύνθεση του Αιθέρα",
+        "description": "",
+        "alt": "",
+        "link": "/compositionofaether"
+      }
+    ]
+  }
+]
