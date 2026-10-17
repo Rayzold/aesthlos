@@ -1,0 +1,248 @@
+{
+ "lang": "el",
+ "slug": "home",
+ "meta": {
+  "title": "Aesthlos Therafoods | A nutritional range of premium herbal honey-based compositions | Athens, Greece",
+  "description": "Aesthlos Therafoods is a nutritional range of premium herbal honey-based compositions, aimed at holistically strengthening health.",
+  "ogTitle": "Aesthlos Therafoods | A nutritional range of premium herbal honey-based compositions | Athens, Greece",
+  "ogDescription": "Aesthlos Therafoods is a nutritional range of premium herbal honey-based compositions, aimed at holistically strengthening health.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-lbm8e1xb1",
+   "src": "21375d_572ef7f0212b4dd2ab457369b48e019d~mv2.png",
+   "alt": "",
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "type": "image",
+   "section": "comp-lbm8e1xb1",
+   "src": "21375d_b427210cdca9411e9f335576ecb5f02e~mv2.png",
+   "alt": "Aesthlos Therafoods logo",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-lbm8e1xb1",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Μια διατροφική σειρά premium βοτανικών συνθέσεων με βάση το μέλι,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lbm8e1xb1",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "που στοχεύει ολιστικά στην ενδυνάμωση της υγείας."
+    }
+   ]
+  },
+  {
+   "type": "video",
+   "section": "comp-mka15iaf",
+   "id": "11062b_fac51a38acf24ea2aa030216e01a0ea3"
+  },
+  {
+   "type": "image",
+   "section": "comp-mka15iaf",
+   "src": "11062b_fac51a38acf24ea2aa030216e01a0ea3f000.jpg",
+   "alt": "",
+   "width": 2560,
+   "height": 1440
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Αesthlos Infinity",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "για Ζωτικότητα & Ευεξία",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "link",
+   "section": "comp-mka15iaf",
+   "text": "Δείτε περισσότερα",
+   "href": "/copy-of-the-composition-of-earth"
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Η νέα προσθήκη που ήρθε να ολοκληρώσει"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "τις Βοτανικές μας Συνθέσεις."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-mka15iaf",
+   "src": "21375d_4530e055be6647f8835f3ebfea087c46~mv2.jpg",
+   "alt": "",
+   "width": 4953,
+   "height": 4952
+  },
+  {
+   "type": "text",
+   "section": "comp-llnr20ap",
+   "tag": "h6",
+   "runs": [
+    {
+     "text": "Οι Πέντε Βοτανικές Συνθέσεις"
+    }
+   ]
+  },
+  {
+   "type": "gallery",
+   "section": "comp-llnr20ap",
+   "id": "comp-m48hc4x0",
+   "items": [
+    {
+     "image": "21375d_28c6e932d5a946b4809816aa36651611~mv2.png",
+     "title": "H Σύνθεση της Γης",
+     "alt": "",
+     "href": "/compositionofearth"
+    },
+    {
+     "image": "21375d_3ab7426ed12b418fbf94c984a0cf9bff~mv2.png",
+     "title": "Η Σύνθεση του Νερού",
+     "alt": "",
+     "href": "/compositionofwater"
+    },
+    {
+     "image": "21375d_794fe81cf2b14a2d802bcce00a4bfd9f~mv2.png",
+     "title": "Η Σύνθεση της Φωτιάς",
+     "alt": "",
+     "href": "/compositionoffire"
+    },
+    {
+     "image": "21375d_e1a3e973eaf3476094e6024fb5571886~mv2.png",
+     "title": "Η Σύνθεση του Αέρα",
+     "alt": "",
+     "href": "/compositionofair"
+    },
+    {
+     "image": "21375d_6cee9aa3fd114d599dd72643434db2ae~mv2.png",
+     "title": "Η Σύνθεση του Αιθέρα",
+     "alt": "",
+     "href": "/compositionofaether"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "h6",
+   "runs": [
+    {
+     "text": "Λίγα λόγια για εμάς..."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Μία φιλία που ξεκίνησε κάπου στο μακρινό 1990, όταν ακόμα και οι δύο ήταν φοιτητές στο Πολυτεχνείο, και συνεχίστηκε με κοινούς βίους και αγαπημένες διαδρομές (στις πολεμικές τέχνες, στη φωτογραφία, στη συγγραφή, στη μουσική, στο θέατρο και… γενικότερα στις τέχνες!) οδήγησε μετά από 35 ολόκληρα χρόνια τον Γιώργο και τον Θεοδόση σε μία επαγγελματική συνεργασία κάτω από το BrandName «Aesthlos» («ΕΣΘΛΟΣ»). Μέσα από αυτήν τη συνεργασία κατάφεραν να \"παντρέψουν\" όλη την αγάπη τους για τον άνθρωπο με την βιομηχανία του τροφίμου, δημιουργώντας μια σειρά Βοτανικών Συνθέσεων εμπνευσμένων από την Αρχαία Ελληνική παράδοση."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-llqggnmd",
+   "src": "21375d_c7a29b5c417240b290097eea0395807a~mv2.png",
+   "alt": "Aesthlos Honey ",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "” Η τροφή πρέπει να είναι το φάρμακό σου",
+     "color": "#FFC824"
+    },
+    {
+     "text": "\n"
+    },
+    {
+     "text": "\nκαι το φάρμακό σου να είναι η τροφή σου”",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "(Ιπποκράτης, 460 π.Χ. - 377 π.Χ.)"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Σε μια εποχή που η τροφή υποβαθμίζεται συνεχώς μέσα από την αλόγιστη εκμετάλλευση και τη μόλυνση των φυσικών πόρων και οι θρεπτικές ουσίες της αντικαθίστανται με άγευστα συμπληρώματα διατροφής, οι δυο τους δημιούργησαν πέντε διαφορετικές "
+    },
+    {
+     "text": "«Συνθέσεις Μελιού» ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "που συνδυάζουν την ολιστική υποστήριξη των πέντε επιπέδων υγείας, και προετοιμάζει συναισθηματικά, διανοητικά και σωματικά τον άνθρωπο για το ταξίδι της ζωής του."
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-llqggnmd",
+   "text": "Λίγα Λόγια για τα μέλια μας...",
+   "href": "/thegreekhoneys"
+  }
+ ]
+}

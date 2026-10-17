@@ -1,0 +1,102 @@
+{
+ "lang": "el",
+ "slug": "aesthlosforesthoney",
+ "meta": {
+  "title": "Forest Honey | Aesthlos",
+  "description": "Our collections come from Mountainous Ilia and the famous Forest of Foloi, as well as from the mountainous region of Evia, the towering Dirfi. Forests filled with oaks, chestnut trees, pines, firs, beeches, plane trees, mastic trees, ash trees, wild pear trees, heathers, spartium, walnut trees, wildflowers, peonies, primroses, fruit trees, and higher up, alpine junipers.",
+  "ogTitle": "Forest Honey | Aesthlos",
+  "ogDescription": "Our collections come from Mountainous Ilia and the famous Forest of Foloi, as well as from the mountainous region of Evia, the towering Dirfi. Forests filled with oaks, chestnut trees, pines, firs, beeches, plane trees, mastic trees, ash trees, wild pear trees, heathers, spartium, walnut trees, wildflowers, peonies, primroses, fruit trees, and higher up, alpine junipers.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/aesthlosforesthoney"
+ },
+ "blocks": [
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Mέλι Δάσους",
+     "color": "#108713"
+    }
+   ],
+   "color": "#108713"
+  },
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Το ελληνικό μέλι Δάσους είναι μία εξαιρετική ποιότητα μελιού που προκύπτει ως σύνθεση μέσα από την απόλυτη εμπιστοσύνη του μελισσουργού στο φυσικό ένστικτο και την ελευθερία της μέλισσας στον τρύγο."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Κάθε δάσος έχει μία δική του εντελώς προσωπική ταυτότητα που προκύπτει από την επιθυμία της φύσης για γενναιοδωρία και προσφορά. Η ποικιλότητά του σε φυτά, βοτανικούς θάμνους, ανθούς και δέντρα, μόνο τυχαία δεν είναι, δρα αλχημιστικά με βάσει φυσικούς \"αλγόριθμους υγείας\", προσδίδοντας έναν απόλυτο συνδυασμό μελιτωμάτων (από άγρια δέντρα) και νέκταρ (από άγρια βοτάνια, λουλούδια και άλλα ενδημικά είδη φυτών)."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Το αποτέλεσμα είναι ένα πολύ γευστικό και βελούδινο μέλι, χωρίς όμως υπερβολική γλυκύτητα, ανάλογα πάντα και με την αναλογία μελιτωμάτων και γύρης που εμπεριέχει. Χαρακτηρίζεται ως ένα μέλι μεγάλης θρεπτικής αξίας, καθώς περιέχει σε μεγάλες ποσότητες κάλλιο, μαγνήσιο, φώσφορο, σίδηρο και νάτριο. Βοηθάει  στις γαστρικές διαταραχές, στη γρίπη, στην υπερκόπωση και στις αιμορροΐδες."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Οι συλλογές μας προέρχονται από την Ορεινή Ηλεία και το ξακουστό Δάσος της Φολόης αλλά και την ορεινή Εύβοια, την πανύψηλη Δίρφυ. Δάση γεμάτα από Βελανιδιές καστανιές, πεύκα, έλατα, οξιές, πλατάνια, πουρνάρια, αριές, κουμαριές, ρείκια, σπάρτα, καρυδιές, αγριολούλουδα, παιώνιες, πρίμουλες, οπωροφόρα δέντρα και ορεινότερα σφάκα."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-m4ic5063",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Είναι από τα πιο πλούσια σε αντιοξειδωτικές ιδιότητες μέλια."
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-m4ic5063",
+   "text": "Πιστοποίηση",
+   "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+  },
+  {
+   "type": "link",
+   "section": "comp-m4ic5063",
+   "text": "Χημικές Αναλύσεις",
+   "href": "wixfile:21375d_73eb672f52df443291f93878977596e0.pdf"
+  },
+  {
+   "type": "link",
+   "section": "comp-m4ic5063",
+   "text": "Μέλι Άγριας Βελανιδιάς",
+   "href": "/aesthloswildoakhoney"
+  },
+  {
+   "type": "image",
+   "section": "comp-m4ic5063",
+   "src": "21375d_a65aa9db393c4a618ada63feaff55532~mv2.png",
+   "alt": "Untitled Catalog0137 1 copy.png",
+   "width": null,
+   "height": null
+  }
+ ]
+}

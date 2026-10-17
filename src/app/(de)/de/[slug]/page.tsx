@@ -1,0 +1,19 @@
+import RawPage from "@/components/content/RawPage";
+import { SLUGS, type Slug } from "@/content/site";
+import { getPage, pageMetadata } from "@/lib/content";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return SLUGS.filter((s) => s !== "").map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  return pageMetadata("de", slug as Slug);
+}
+
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  return <RawPage page={getPage("de", slug as Slug)} />;
+}

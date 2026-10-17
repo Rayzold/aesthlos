@@ -1,0 +1,201 @@
+{
+ "lang": "de",
+ "slug": "compositionofaether",
+ "meta": {
+  "title": "The Composition of  Aether | Aesthlos",
+  "description": "A botanical recipe based on flower honey, enriched with royal jelly, Ashwagandha, and Schisandra chinensis, designed to support the holistic wellness of the body by boosting mental and physical performance.",
+  "ogTitle": "The Composition of  Aether | Aesthlos",
+  "ogDescription": "A botanical recipe based on flower honey, enriched with royal jelly, Ashwagandha, and Schisandra chinensis, designed to support the holistic wellness of the body by boosting mental and physical performance.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/compositionofaether?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die Κomposition des Äthers",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "(Das ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "fünfte Element)"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "HOLISTISCHE WELLNESS"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Botanische Komposition aus "
+    },
+    {
+     "text": "Blütenhonig ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "mit "
+    },
+    {
+     "text": "Gelée Royale",
+     "color": "#FFC824"
+    },
+    {
+     "text": ", "
+    },
+    {
+     "text": "Ashwagandha",
+     "color": "#FFC824"
+    },
+    {
+     "text": " und "
+    },
+    {
+     "text": "Schisandra chinensis",
+     "color": "#FFC824"
+    },
+    {
+     "text": ", welche das ganzheitliche Wohlbefinden des Körpers unterstützen und die geistigen und körperlichen Funktionen anregt. Schisandra ist ein absoluter Balancer für den menschlichen Körper. Es wirkt gegen Stress und Müdigkeit und stimuliert das Potential und steigert gleichzeitig ganzheitlich die Leistungsfähigkeit in Geist und Körper."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die Komposition wird durch "
+    },
+    {
+     "text": "Rosa canina",
+     "color": "#FFC824"
+    },
+    {
+     "text": " und "
+    },
+    {
+     "text": "Noni-Saft ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "bereichert und mit "
+    },
+    {
+     "text": "Pollen",
+     "color": "#FFC824"
+    },
+    {
+     "text": " und "
+    },
+    {
+     "text": "Zimt",
+     "color": "#FFC824"
+    },
+    {
+     "text": " verfeinert."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Anweisungen für den Gebrauch",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Maximale Tagesdosis: ein bis zwei “gehäufte” Teelöffel, ausreichend zerkaut, vorzugsweise vor einer körperlichen Aktivität, oder in kleineren Mengen mehrmals täglich, zunächst unter der Zunge und dann ausreichend zerkaut."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Zutaten",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Blütenhonig, Ashwagandha - Withania somnifera , Schisandra chinensis , Gelée Royale, Pollen, Noni Saft, Rosa canina, Cinnamomum zeylanicum"
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkdo7un",
+   "text": "Die Botanischen Kompositionen",
+   "href": "/thecompositions?lang=de"
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkdo7un",
+   "text": "Zertifizierung",
+   "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+  },
+  {
+   "type": "image",
+   "section": "comp-lmkdo7un",
+   "src": "21375d_468726de56ea406cba9c2a6902934a61~mv2.jpg",
+   "alt": "7R2B0457 αντίγραφο copy.jpg",
+   "width": null,
+   "height": null
+  }
+ ]
+}

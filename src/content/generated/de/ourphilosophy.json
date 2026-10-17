@@ -1,0 +1,291 @@
+{
+ "lang": "de",
+ "slug": "ourphilosophy",
+ "meta": {
+  "title": "Unsere Philosophie | Aesthlos",
+  "description": null,
+  "ogTitle": "Unsere Philosophie | Aesthlos",
+  "ogDescription": null,
+  "ogImage": "https://static.wixstatic.com/media/21375d_55f5ac61a3654cdca48a4917c323badf~mv2.jpg/v1/fill/w_1920,h_1080,al_c/21375d_55f5ac61a3654cdca48a4917c323badf~mv2.jpg",
+  "canonical": "https://www.aesthlos.com/ourphilosophy?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_852f216e9e05438085eaab6716a40a67~mv2.jpg",
+   "alt": "",
+   "width": 3500,
+   "height": 2300
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_60ef95dd5b4f420ab4e86c5ba201c425~mv2.png",
+   "alt": "",
+   "width": 1000,
+   "height": 1205
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_abb2bc907b694c988671d43813228e0e~mv2.avif",
+   "alt": "",
+   "width": 897,
+   "height": 1346
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_030a5d89b2a44930a7e8766e35002969~mv2.avif",
+   "alt": "",
+   "width": 835,
+   "height": 1253
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "\"Aesthlos\" kann aus dem Altgriechischen übersetzt werden als:"
+    },
+    {
+     "text": "“der Starke, der Würdige, der Beste seiner Art”.",
+     "color": "#FFC824"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Dies ist das Wort, das die fünf Produkte dieser Serie charaktisiert, die fünf Rezepte der Stärke. Fünf, wie die Urelemente der Erschaffung der Welt, laut der altgriechischen Philosophie."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_ef28d88c26dd487180ceaa888de9af84~mv2.png",
+   "alt": "earth symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_b47046b103344638947e50f7af1a2811~mv2.png",
+   "alt": "water symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_4a8c6a6db0ef478badd2b6a56e469c29~mv2.png",
+   "alt": "fire symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_810359c0d35e4f758df4f8789045f821~mv2.png",
+   "alt": "air symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_19d0c371aafc48bb915543e9ed82f84b~mv2.png",
+   "alt": "Aether symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ERDE",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "WASSER",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "FEUER",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "LUFT",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "AETHER (das fünfte Element)",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "“Endiamesos” (Vermittler) ist ein griechisches Wort, was"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "“der, der dazwischen steht”.",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die “Erzähler” der esoterischen Traditionen übertragen uns, dass diese “Vermittler” als die größten Alchemisten in der Menschheitsgeschichte galten, während die vermittelten Elemente ihrer magischen und heilenden Rezepturen zur Erhaltung der Gesundheit dienten."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "In unserer Geschichte haben ein moderner Erzähler zusammen mit dem Vermittler mit Liebe und Kunst, davon geträumt, eine excellende Ernährungslinie aus Botanischen Zusammensetzungen auf Honigbasis, die ganzheitlich auf die Stärkung der Gesundheit abzielen."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "h2",
+   "runs": [
+    {
+     "text": "Therafoods /"
+    },
+    {
+     "text": "\n\nNext Generation Foods"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_feae852610ab4961b60a36ae7eb87ea1~mv2.png",
+   "alt": "Aesthlos therafoods fire composition",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die Dichte und Struktur unserer Produkte hängt von"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "der jeweiligen Produktionscharge ab, da die verwendeten Rohstoffe zu 100% aus biologischem Anbau stammen und nicht “standardisiert” werden können."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die Biene ist ein lebendiger Organismus, der unseren Respekt verdient und nicht ausgebeutet werden darf."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Unsere Bienen befinden sich in Natura- Gebieten in Höhenlagen bis zu 1300 Metern und der Produktionsprozess unterliegt denGrundsätzen eines streng biologischen und ökologischen Ansatzes."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die jährliche Produktion ist begrenzt und hängt jedes Mal von der Fähigkeit der Natur ab, uns ihre reichen Gaben auf optimale Weise zu gewähren."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_a78b194587f54913ba6f1f012a6d59c4~mv2.png",
+   "alt": "aesthlos honey formulations",
+   "width": null,
+   "height": null
+  }
+ ]
+}

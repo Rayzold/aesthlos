@@ -1,0 +1,181 @@
+{
+ "lang": "el",
+ "slug": "compositionofaether",
+ "meta": {
+  "title": "The Composition of  Aether | Aesthlos",
+  "description": "A botanical recipe based on flower honey, enriched with royal jelly, Ashwagandha, and Schisandra chinensis, designed to support the holistic wellness of the body by boosting mental and physical performance.",
+  "ogTitle": "The Composition of  Aether | Aesthlos",
+  "ogDescription": "A botanical recipe based on flower honey, enriched with royal jelly, Ashwagandha, and Schisandra chinensis, designed to support the holistic wellness of the body by boosting mental and physical performance.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/compositionofaether"
+ },
+ "blocks": [
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Η Σύνθεση του Aιθέρα",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "(του 5ου στοιχείου)",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΟΛΙΣΤΙΚΗ ΕΥΕΞΙΑ"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Βοτανική συνταγή βάσης μελιού ανθέων με 25% ενεργά βότανα και superfoods. Περιέχει "
+    },
+    {
+     "text": "βασιλικό πολτό",
+     "color": "#FFC824"
+    },
+    {
+     "text": ", "
+    },
+    {
+     "text": "Ashwagandha ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "& "
+    },
+    {
+     "text": "Schisandra chinensis",
+     "color": "#FFC824"
+    },
+    {
+     "text": ", που βοηθάει την ολιστική ευεξία του οργανισμού, τονώνοντας τη νοητική και τη σωματική λειτουργία. Η Schisandra αποτελεί έναν σημαντικό εξισορροπιστή για τον οργανισμό του ανθρώπου.  Δρα κατά του άγχους και της  κόπωσης, ενώ τονώνει το  δυναμικό του αποτελώντας  ενισχυτικό της απόδοσης  ολιστικά: σε νου και σώμα. Η σύνθεση ενισχύεται από"
+    },
+    {
+     "text": " Rosa canina (κυνόροδο) ",
+     "color": "#FFC824"
+    },
+    {
+     "text": "και  "
+    },
+    {
+     "text": "χυμό Noni",
+     "color": "#FFC824"
+    },
+    {
+     "text": ", ενώ εξισορροπείται  από τα «ενδιάμεσα» συστατικά  της "
+    },
+    {
+     "text": "γύρης",
+     "color": "#FFC824"
+    },
+    {
+     "text": " και της "
+    },
+    {
+     "text": "κανέλλας",
+     "color": "#FFC824"
+    },
+    {
+     "text": "."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Οδηγίες Χρήσης",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Μέγιστη καταναλώσιμη ποσότητα ημερησίως: ένα έως δύο \"κοφτά\" κουταλάκια του γλυκού επαρκώς μασημένα, κατά προτίμηση πριν από σωματική άσκηση, είτε χορηγούμενο σε μικρότερες ποσότητες πολλαπλές φορές τη μέρα, αρχικά υπογλωσσίως και στη συνέχεια επαρκώς μασημένα."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Συνιστάται καθημερινή χρήση για 1-3 μήνες ως προς την επαλήθευση των ισχυρισμών της υγείας."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Συστατικά",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkdo7un",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Μέλι ανθέων, Ashwagandha - Withania somnifera, Schisandra chinensis, βασιλικός πολτός, γύρη, xυμός Noni, Rosa canina, Cinnamomum zeylanicum"
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkdo7un",
+   "text": "Οι Βοτανικές Συνθέσεις",
+   "href": "/thecompositions"
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkdo7un",
+   "text": "Πιστοποίηση",
+   "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+  },
+  {
+   "type": "image",
+   "section": "comp-lmkdo7un",
+   "src": "21375d_519d0b9ffa664439a315fe2fd5da11b7~mv2.png",
+   "alt": "Pro-Capture-One-0579-smakk.png",
+   "width": null,
+   "height": null
+  }
+ ]
+}

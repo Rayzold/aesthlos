@@ -1,0 +1,309 @@
+{
+ "lang": "el",
+ "slug": "ourphilosophy",
+ "meta": {
+  "title": "Η Φιλοσοφία μας | Aesthlos",
+  "description": "Aesthlos in ancient Greek means:\n\"the strong, the worthy, the best in its kind.\"\nThis is the word that defines the five products of the series, the five recipes of strength.",
+  "ogTitle": "Η Φιλοσοφία μας | Aesthlos",
+  "ogDescription": "Aesthlos in ancient Greek means:\n\"the strong, the worthy, the best in its kind.\"\nThis is the word that defines the five products of the series, the five recipes of strength.",
+  "ogImage": "https://static.wixstatic.com/media/21375d_55f5ac61a3654cdca48a4917c323badf~mv2.jpg/v1/fill/w_1920,h_1080,al_c/21375d_55f5ac61a3654cdca48a4917c323badf~mv2.jpg",
+  "canonical": "https://www.aesthlos.com/ourphilosophy"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_852f216e9e05438085eaab6716a40a67~mv2.jpg",
+   "alt": "",
+   "width": 3500,
+   "height": 2300
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_60ef95dd5b4f420ab4e86c5ba201c425~mv2.png",
+   "alt": "",
+   "width": 1000,
+   "height": 1205
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_abb2bc907b694c988671d43813228e0e~mv2.avif",
+   "alt": "",
+   "width": 897,
+   "height": 1346
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_030a5d89b2a44930a7e8766e35002969~mv2.avif",
+   "alt": "",
+   "width": 835,
+   "height": 1253
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "«Eσθλός», στα αρχαία ελληνικά θα πει:"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "«ο ισχυρός, ο άξιος, ο καλύτερος στο είδος του».",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Αυτή είναι η λέξη που χαρακτηρίζει τα πέντε προϊόντα της σειράς, τις πέντε συνταγές δύναμης. Πέντε, όσα και τα αρχέγονα στοιχεία της δημιουργίας του κόσμου, κατά την αρχαία ελληνική φιλοσοφία:"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_ef28d88c26dd487180ceaa888de9af84~mv2.png",
+   "alt": "earth symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_b47046b103344638947e50f7af1a2811~mv2.png",
+   "alt": "water symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_4a8c6a6db0ef478badd2b6a56e469c29~mv2.png",
+   "alt": "fire symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_810359c0d35e4f758df4f8789045f821~mv2.png",
+   "alt": "air symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_19d0c371aafc48bb915543e9ed82f84b~mv2.png",
+   "alt": "Aether symbol",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΓΗ",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΝΕΡΟ",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΦΩΤΙΑ",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΑΕΡΑΣ",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "ΑΙΘΕΡΑΣ (το Πέμπτο Στοιχείο)",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "«Ενδιάμεσος», είναι μια ελληνική λέξη που σημαίνει:"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "«αυτός που βρίσκεται ανάμεσα».",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Οι “Αφηγητές” των Εσωτερικών Παραδόσεων μας διηγούνται ότι οι “Ενδιάμεσοι” της Αρχαίας Εποχής αποτελούσαν τους μεγαλύτερους Αλχημιστές στην ιστορία του ανθρώπου, ενώ τα ενδιάμεσα συστατικά των συνταγών τους, αποτελούσαν τις μυστικές ασπίδες υγείας των θεραπευτικών μαγικών ελιξηρίων τους."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Στη δική μας ιστορία, ένας σύγχρονος Αφηγητής μαζί με τον Ενδιάμεσό του ονειρεύτηκαν με αγάπη και τέχνη, μια διατροφική σειρά premium βοτανικών συνθέσεων με βάση το μέλι, που στοχεύουν ολιστικά στην ενδυνάμωση της υγείας."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "h2",
+   "runs": [
+    {
+     "text": "Therafoods /"
+    },
+    {
+     "text": "\n\nNext Generation Superfoods"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_feae852610ab4961b60a36ae7eb87ea1~mv2.png",
+   "alt": "Aesthlos therafoods fire composition",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Σε μια εποχή που η τροφή υποβαθμίζεται συνεχώς μέσα από την αλόγιστη εκμετάλλευση και μόλυνση των φυσικών πόρων, ενώ οι θρεπτικές ουσίες αντικαθίστανται με άγευστα συμπληρώματα διατροφής, δημιουργήσαμε μια σειρά βοτανικών συνθέσεων εμπνευσμένων από την Αρχαία Ελληνική παράδοση."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Οι συνθέσεις μας συνδυάζουν την ολιστική υποστήριξη των πέντε επιπέδων υγείας, με μια μοναδική γευστική εμπειρία, που μπορεί να ομορφαίνει κάθε σας γεύμα."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Τα μελίσσια μας βρίσκονται σε περιοχές Natura με υψόμετρο έως και 1300m και ολόκληρη η διαδικασία παραγωγής διέπεται από τις αρχές μιας αυστηρά βιολογικής και οικολογικής προσέγγισης."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Η ετήσια παραγωγή είναι περιορισμένη και καθορίζεται κάθε φορά από τη δυνατότητα της φύσης να μας χορηγήσει κατά τρόπο άριστο τα πλούσια δώρα της."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Η πυκνότητα και η υφή των προϊόντων μας εξαρτάται από την παρτίδα παραγωγής, καθώς οι πρώτες ύλες που χρησιμοποιούνται είναι 100%"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-knq5btrn",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "οργανικής προέλευσης και είναι αδύνατον να “τυποποιηθούν”."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-knq5btrn",
+   "src": "21375d_a78b194587f54913ba6f1f012a6d59c4~mv2.png",
+   "alt": "aesthlos honey formulations",
+   "width": null,
+   "height": null
+  }
+ ]
+}

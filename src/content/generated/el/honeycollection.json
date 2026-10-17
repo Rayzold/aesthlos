@@ -1,0 +1,49 @@
+{
+ "lang": "el",
+ "slug": "honeycollection",
+ "meta": {
+  "title": "Οι Συλλογές Μελιών | Aesthlos",
+  "description": "Our honey collection comes from families of beekeepers with a tradition of at least half a century in beekeeping, using entirely natural and organic methods. The transportation of bees to various regions across Greece allows the collection of honey from different nectars and blossoms, creating a natural pharmacy that protects the human body and fortifies its health.",
+  "ogTitle": "Οι Συλλογές Μελιών | Aesthlos",
+  "ogDescription": "Our honey collection comes from families of beekeepers with a tradition of at least half a century in beekeeping, using entirely natural and organic methods. The transportation of bees to various regions across Greece allows the collection of honey from different nectars and blossoms, creating a natural pharmacy that protects the human body and fortifies its health.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/honeycollection"
+ },
+ "blocks": [
+  {
+   "type": "video",
+   "section": "comp-m4pp3xk9",
+   "id": "11062b_44a48dd0e9d043c8a1c1837e9dfeee8d"
+  },
+  {
+   "type": "image",
+   "section": "comp-m4pp3xk9",
+   "src": "11062b_44a48dd0e9d043c8a1c1837e9dfeee8df000.jpg",
+   "alt": "",
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "type": "text",
+   "section": "comp-m4pp3xk9",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Δείτε τα μέλια μας"
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-m4pp3xk9",
+   "text": "Μέλι Άγριας Βελανιδιάς",
+   "href": "/aesthloswildoakhoney"
+  },
+  {
+   "type": "link",
+   "section": "comp-m4pp3xk9",
+   "text": "Μέλι Δάσους",
+   "href": "/aesthlosforesthoney"
+  }
+ ]
+}

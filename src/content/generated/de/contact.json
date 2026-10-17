@@ -1,0 +1,100 @@
+{
+ "lang": "de",
+ "slug": "contact",
+ "meta": {
+  "title": "Kontakt | Aesthlos",
+  "description": null,
+  "ogTitle": "Kontakt | Aesthlos",
+  "ogDescription": null,
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/contact?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-jyr7wf9k",
+   "src": "21375d_4baf0168c35e43a18b35ef6c6a0678b2~mv2.jpg",
+   "alt": "Greek Honey",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "h5",
+   "runs": [
+    {
+     "text": "Kommunikationsformel"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Danke für Ihre Nachricht!"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "AESTHLOS THERAFOODS Koutalas Andreas"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Οmirou 14, Nea Smirni"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "17122 Αthen - Griechenland"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "E: "
+    },
+    {
+     "text": "info@aesthlos.com",
+     "href": "mailto:info@melimuses.gr"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-jyr7wf9k",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Τ: +30 "
+    },
+    {
+     "text": "21 3014 4422",
+     "href": "https://www.google.com/search?q=%CF%85%CE%B3%CE%B5%CE%B9%CE%BF%CE%B3%CE%BD%CF%89%CE%B9%CF%83%CE%B9%CE%B1&client=safari&rls=en&sxsrf=ALeKk0302pgXtSvgXge8wYcBM4tnu-1q0g%3A1617799972041&ei=JKttYNyAAtC1sAfztqzoCg&oq=%CF%85%CE%B3%CE%B5%CE%B9%CE%BF%CE%B3%CE%BD%CF%89%CE%B9%CF%83%CE%B9%CE%B1&gs_lcp=Cgdnd3Mtd2l6EAM6AggAOggILhDHARCvAToLCC4QxwEQrwEQkwI6BAgAEAo6BQgAEMsBOgsILhDHARCvARDLAToNCC4QxwEQrwEQDRCTAjoECAAQDToKCC4QxwEQrwEQDToNCC4QxwEQrwEQExCTAjoGCAAQChATOgoIABANEAoQHhATOgYIABAeEBM6DAgAEA0QBRAKEB4QEzoCCCZQyPYzWJ-GNGCriTRoAHACeAGAAaMCiAGSEpIBBTAuOS40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwjcoprFluzvAhXQGuwKHXMbC60Q4dUDCAw&uact=5#"
+    }
+   ]
+  }
+ ]
+}

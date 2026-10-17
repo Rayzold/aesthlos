@@ -1,0 +1,65 @@
+{
+ "lang": "el",
+ "slug": "thecompositions",
+ "meta": {
+  "title": "Οι Βοτανικές Συνθέσεις | Aesthlos",
+  "description": "Our formulations combine the holistic support of the five levels of health with a unique taste experience that shields the boxdy from all forms of illness.",
+  "ogTitle": "Οι Βοτανικές Συνθέσεις | Aesthlos",
+  "ogDescription": "Our formulations combine the holistic support of the five levels of health with a unique taste experience that shields the boxdy from all forms of illness.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/thecompositions"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-lbm8e1x91",
+   "src": "21375d_2dadbc5bc2ff48b9b7c715e2b8290211~mv2.png",
+   "alt": "",
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "type": "gallery",
+   "section": "comp-lbm8e1x91",
+   "id": "comp-jye59dn6",
+   "items": [
+    {
+     "image": "21375d_4530e055be6647f8835f3ebfea087c46~mv2.jpg",
+     "title": "Η Σύνθεση του Infinity",
+     "alt": "",
+     "href": null
+    },
+    {
+     "image": "21375d_d1cc13c4df624598b1108c2cc1a4a2d5~mv2.jpg",
+     "title": "Η Σύνθεση της Γης",
+     "alt": "aesthlos earth composition",
+     "href": "/compositionofearth"
+    },
+    {
+     "image": "21375d_926b539bc53b41dfb94fad31f46c4d51~mv2.jpg",
+     "title": "Η Σύνθεση του Νερού",
+     "alt": "aesthlos composition water",
+     "href": "/compositionofwater"
+    },
+    {
+     "image": "21375d_3b0730f1115347b8afb525250fcf0af7~mv2.jpg",
+     "title": "H Σύνθεση της Φωτιάς",
+     "alt": "aesthlos composition fire",
+     "href": "/compositionoffire"
+    },
+    {
+     "image": "21375d_c8012382c8654134b023e45926e59264~mv2.jpg",
+     "title": "H Σύνθεση του Αέρα",
+     "alt": "aesthlos composition air",
+     "href": "/compositionofair"
+    },
+    {
+     "image": "21375d_b8ec79ea9dd34d19aff2767be7eea77b~mv2.jpg",
+     "title": "H Σύνθεση του Αιθέρα",
+     "alt": "aesthlos composition aether",
+     "href": "/compositionofaether"
+    }
+   ]
+  }
+ ]
+}

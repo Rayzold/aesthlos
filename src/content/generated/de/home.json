@@ -1,0 +1,329 @@
+{
+ "lang": "de",
+ "slug": "home",
+ "meta": {
+  "title": "Homepage | Aesthlos",
+  "description": null,
+  "ogTitle": "Homepage | Aesthlos",
+  "ogDescription": null,
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "image",
+   "section": "comp-lbm8e1xb1",
+   "src": "21375d_572ef7f0212b4dd2ab457369b48e019d~mv2.png",
+   "alt": "",
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "type": "image",
+   "section": "comp-lbm8e1xb1",
+   "src": "21375d_b427210cdca9411e9f335576ecb5f02e~mv2.png",
+   "alt": "Aesthlos Therafoods logo",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-lbm8e1xb1",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine erstklassige Nahrungsmittelserie,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lbm8e1xb1",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "mit hochwertigen Kräuterkompositionen auf Honigbasis,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lbm8e1xb1",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "die ganzheitlich zur Stärkung der Gesundheit abzielt."
+    }
+   ]
+  },
+  {
+   "type": "video",
+   "section": "comp-mka15iaf",
+   "id": "11062b_fac51a38acf24ea2aa030216e01a0ea3"
+  },
+  {
+   "type": "image",
+   "section": "comp-mka15iaf",
+   "src": "11062b_fac51a38acf24ea2aa030216e01a0ea3f000.jpg",
+   "alt": "",
+   "width": 2560,
+   "height": 1440
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine erstklassige Nahrungsmittelserie,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "mit hochwertigen Kräuterkompositionen auf Honigbasis,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "die ganzheitlich zur Stärkung der Gesundheit abzielt."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine erstklassige Nahrungsmittelserie,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "mit hochwertigen Kräuterkompositionen auf Honigbasis,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "die ganzheitlich zur Stärkung der Gesundheit abzielt."
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-mka15iaf",
+   "text": "Δείτε περισσότερα",
+   "href": "/copy-of-the-composition-of-earth?lang=de"
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine erstklassige Nahrungsmittelserie,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "mit hochwertigen Kräuterkompositionen auf Honigbasis,"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-mka15iaf",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "die ganzheitlich zur Stärkung der Gesundheit abzielt."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-mka15iaf",
+   "src": "21375d_4530e055be6647f8835f3ebfea087c46~mv2.jpg",
+   "alt": "",
+   "width": 4953,
+   "height": 4952
+  },
+  {
+   "type": "text",
+   "section": "comp-llnr20ap",
+   "tag": "h6",
+   "runs": [
+    {
+     "text": "Die fünf Botanische Kompositionen"
+    }
+   ]
+  },
+  {
+   "type": "gallery",
+   "section": "comp-llnr20ap",
+   "id": "comp-m48hc4x0",
+   "items": [
+    {
+     "image": "21375d_28c6e932d5a946b4809816aa36651611~mv2.png",
+     "title": "H Σύνθεση της Γης",
+     "alt": "",
+     "href": "/compositionofearth"
+    },
+    {
+     "image": "21375d_3ab7426ed12b418fbf94c984a0cf9bff~mv2.png",
+     "title": "Η Σύνθεση του Νερού",
+     "alt": "",
+     "href": "/compositionofwater"
+    },
+    {
+     "image": "21375d_794fe81cf2b14a2d802bcce00a4bfd9f~mv2.png",
+     "title": "Η Σύνθεση της Φωτιάς",
+     "alt": "",
+     "href": "/compositionoffire"
+    },
+    {
+     "image": "21375d_e1a3e973eaf3476094e6024fb5571886~mv2.png",
+     "title": "Η Σύνθεση του Αέρα",
+     "alt": "",
+     "href": "/compositionofair"
+    },
+    {
+     "image": "21375d_6cee9aa3fd114d599dd72643434db2ae~mv2.png",
+     "title": "Η Σύνθεση του Αιθέρα",
+     "alt": "",
+     "href": "/compositionofaether"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "h6",
+   "runs": [
+    {
+     "text": "Ein paar Worte über uns…"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine Freundschaft, die irgendwo in den fernen 90er Jahren begann, als beide noch Studenten am Polytechnikum waren, und sich mit gemeinsamen Leben und beliebten Lebensläufen fortsetzte (in den Kampfkünsten, der Fotografie, dem Schreiben, der Musik, dem Theater, und…also den Künsten allgemein) führte Georg und Theodosius, nach ganzen 35 Jahren, zu einer professionellen Zusammenarbeit unter dem Markennamen “Aesthlos” (“ΕΣΘΛΟΣ”)."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Durch diese Zusammenarbeit haben sie es geschafft, ihre Liebe zu den Mitmenschen mit der Lebensmittelindustrie zu “verheiraten” und eine Reihe von botanischen Kompositionen, die von der antiken griechischen Tradition inspiriert sind, herzustellen."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-llqggnmd",
+   "src": "21375d_c7a29b5c417240b290097eea0395807a~mv2.png",
+   "alt": "Aesthlos Honey ",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "\"Nahrung sollte deine Medizin",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "und deine Medizin deine Nahrung sein.\"",
+     "color": "#FFC824"
+    }
+   ],
+   "color": "#FFC824"
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "( Hippokrates, 460 v.Chr.-377 v.Chr.)"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "In einer Zeit, in der Lebensmittel durch die wahllose Ausbeutung und Verschmutzung natürlicher Ressourcen immer mehr herabgestuft wird und ihre Nährstoffe durch geschmacklose Nahrungsergänzungsmittel ersetzt werden, haben beide fünf verschiedene "
+    },
+    {
+     "text": "“Honig Kompositionen\" ",
+     "color": "#FFC824"
+    },
+    {
+     "text": " entwickelt, die eine ganzheitliche Unterstützung der fünf Ebenen der Gesundheit"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-llqggnmd",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "mit einem einzigartigen Geschmackserlebnis verbinden, und den Menschen emotional, geistig und körperlich auf seinen Lebensweg vorbereitet."
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-llqggnmd",
+   "text": "Ein paar Worte über unsere Honigsorten…",
+   "href": "/thegreekhoneys?lang=de"
+  }
+ ]
+}

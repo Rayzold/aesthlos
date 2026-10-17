@@ -1,0 +1,184 @@
+{
+ "lang": "de",
+ "slug": "compositionofearth",
+ "meta": {
+  "title": "The Composition of Earth | Aesthlos",
+  "description": "A botanical formulation based on flower honey with Rosa canina and a blend of superfoods, which promotes physical vitality and strengthens defense against external microorganisms.",
+  "ogTitle": "The Composition of Earth | Aesthlos",
+  "ogDescription": "A botanical formulation based on flower honey with Rosa canina and a blend of superfoods, which promotes physical vitality and strengthens defense against external microorganisms.",
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/compositionofearth?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Die Komposition der Erde",
+     "color": "#49A94B"
+    }
+   ],
+   "color": "#49A94B"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "STÄRKE UND ROBUSHEIT"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Botanische Komposition aus Blütenhonig mit "
+    },
+    {
+     "text": "Rosa Canina",
+     "color": "#49A94B"
+    },
+    {
+     "text": " (Hagebutte) und einer Mischung aus Superfoods, die zur Stärkung des Körpers und zur Abwehr schädlicher Mikroorganismen beiträgt."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Rosa Canina wird seit der Antike als “Oberster Kräuterheiler” verwendet und wirkt als Super-Stärkung bei körperlicher Erschöpfung und Vitaminmangel, für fast alle organischen Systeme der menschlichen Physiologie"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "( Immunsystem, Harnwege, Hormone, Magen- Darm-Trakt, Haut, etc.). Die Komposition wird durch "
+    },
+    {
+     "text": "Ashwagandha",
+     "color": "#49A94B"
+    },
+    {
+     "text": ", "
+    },
+    {
+     "text": "Schisandra",
+     "color": "#49A94B"
+    },
+    {
+     "text": " und "
+    },
+    {
+     "text": "Zimt ",
+     "color": "#49A94B"
+    },
+    {
+     "text": "ergänzt und ausgeglichen."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Anweisungen für den Gebrauch",
+     "color": "#49A94B"
+    }
+   ],
+   "color": "#49A94B"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Lösen Sie geduldig einen halben Teelöffel in einer kleinen Tasse mit heißem (60°C) Wasser oder Tee auf. Nachdem sich die Mischung gut aufgelöst hat, konsumieren Sie das Getränk lauwarm, vorzugsweise vor dem Essen, pur oder mit ein paar Tropfen Zitrone. Andernfalls essen Sie einen halben Teelöffel, sehr gut gekaut, ein paar Stunden vor der Mahlzeit.",
+     "color": "#FFFFFE"
+    }
+   ],
+   "color": "#FFFFFE"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Empfohlener Verzehr : zwei- bis dreimal täglich.",
+     "color": "#FFFFFE"
+    }
+   ],
+   "color": "#FFFFFE"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Eine tägliche Anwendung über einen Zeitraum von 1 bis 3 Monaten wird empfohlen, um die gesundheitsbezogenen Angaben zu ermöglichen.",
+     "color": "#FFFFFE"
+    }
+   ],
+   "color": "#FFFFFE"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Zutaten",
+     "color": "#49A94B"
+    }
+   ],
+   "color": "#49A94B"
+  },
+  {
+   "type": "text",
+   "section": "comp-lmkc76lp",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Blütenhonig, Ahornsirup, Rosa canina, Cinnamomum zeylanicum, Aschwagandha - Withania somnifera, Schisandra chinensis"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "section": "comp-lmkc76lp",
+   "src": "21375d_2e474d6aa7464c15af6878c4f90af2c8~mv2.png",
+   "alt": "Pro-Capture-One-0416-small.png",
+   "width": null,
+   "height": null
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkc76lp",
+   "text": "Die Botanischen Kompositionen",
+   "href": "/thecompositions?lang=de"
+  },
+  {
+   "type": "link",
+   "section": "comp-lmkc76lp",
+   "text": "Zertifizierung",
+   "href": "wixfile:21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf"
+  }
+ ]
+}

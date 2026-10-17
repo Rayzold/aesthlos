@@ -1,0 +1,49 @@
+{
+ "lang": "de",
+ "slug": "honeycollection",
+ "meta": {
+  "title": "Die Honigsammlungen | Aesthlos",
+  "description": null,
+  "ogTitle": "Die Honigsammlungen | Aesthlos",
+  "ogDescription": null,
+  "ogImage": null,
+  "canonical": "https://www.aesthlos.com/honeycollection?lang=de"
+ },
+ "blocks": [
+  {
+   "type": "video",
+   "section": "comp-m4pp3xk9",
+   "id": "11062b_44a48dd0e9d043c8a1c1837e9dfeee8d"
+  },
+  {
+   "type": "image",
+   "section": "comp-m4pp3xk9",
+   "src": "11062b_44a48dd0e9d043c8a1c1837e9dfeee8df000.jpg",
+   "alt": "",
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "type": "text",
+   "section": "comp-m4pp3xk9",
+   "tag": "p",
+   "runs": [
+    {
+     "text": "Unsere Honige"
+    }
+   ]
+  },
+  {
+   "type": "link",
+   "section": "comp-m4pp3xk9",
+   "text": "Wilder Eichenhonig",
+   "href": "/aesthloswildoakhoney?lang=de"
+  },
+  {
+   "type": "link",
+   "section": "comp-m4pp3xk9",
+   "text": "Wald Honig",
+   "href": "/aesthlosforesthoney?lang=de"
+  }
+ ]
+}
