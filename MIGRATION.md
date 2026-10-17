@@ -70,7 +70,10 @@
 3. Τις εγγραφές του site (A του apex προς 185.230.63.x και CNAME του www προς Wix) **τις αφήνετε προς το παρόν**. Έτσι το Wix site συνεχίζει να δουλεύει κατά την αλλαγή.
 4. Το Cloudflare θα δώσει **δύο nameservers** (π.χ. `xxx.ns.cloudflare.com`).
 
-> 🟡 **Σε εξέλιξη (17/10/2026):** Το aesthlos.com προστέθηκε στο Cloudflare (Free plan). Το «Bot Preference Sync» είναι **κλειστό**, ώστε να μην αλλάξει το robots.txt. Το Cloudflare βρήκε 9 εγγραφές, όλες σωστές: 3×A apex (Wix), A `mail`, A `webmail`, CNAME `www` (Wix), MX, SPF, DKIM. **Εκκρεμεί:** οι 6 πρώτες (apex ×3, mail, webmail, www) πρέπει να γυρίσουν από 🟠 Proxied σε ⚪ **DNS only** και μετά να πατηθεί *Continue*. Οι nameservers στο papaki **δεν** έχουν αλλάξει.
+> ✅ **Έγινε (17/10/2026):** Το aesthlos.com είναι στο Cloudflare (Free plan, κατάσταση *pending* μέχρι να αλλάξουν οι nameservers). Το «Bot Preference Sync» είναι κλειστό. Ελέγχθηκαν και οι **9 εγγραφές**: όλες **DNS only** (καμία με proxy). Οι τιμές **SPF και DKIM είναι ίδιες χαρακτήρα προς χαρακτήρα** με τις τωρινές (DKIM 228/228 χαρακτήρες).
+>
+> **Nameservers του Cloudflare για το Βήμα 3:** `jonah.ns.cloudflare.com` και `yolanda.ns.cloudflare.com`
+> (στη θέση των `ns8.wixdns.net` / `ns9.wixdns.net` στο papaki).
 
 ## Βήμα 3: Αλλαγή nameservers στο papaki
 
