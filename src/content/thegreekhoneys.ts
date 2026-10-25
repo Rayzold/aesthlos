@@ -2,7 +2,8 @@ import type { Lang, Run } from "./types";
 
 /**
  * /thegreekhoneys copy — editorial flow in page order, verbatim from Wix
- * (frozen by scripts/freeze/phase4.py). Blocks with `translated: true` were added for the German page.
+ * (frozen by scripts/freeze/phase4.py). Owner/designer change (25/10/2026): the green heading
+ * «Τα Ελληνικά Μεσογειακά Δάση» stands above «Το Δάσος της Φολόης…» (on Wix it was at the end). Blocks with `translated: true` were added for the German page.
  */
 export type EditorialBlock =
   | { type: "text"; tag: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "li"; runs: Run[]; color?: string; translated?: boolean }
@@ -263,6 +264,17 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
       "tag": "p",
       "runs": [
         {
+          "text": "Τα Ελληνικά Μεσογειακά Δάση",
+          "color": "#49A94B"
+        }
+      ],
+      "color": "#49A94B"
+    },
+    {
+      "type": "text",
+      "tag": "p",
+      "runs": [
+        {
           "text": "Το Δάσος της Φολόης πήρε το όνομά του από τον Κένταυρο Φόλο της ελληνικής μυθολογίας. Όποιος βρεθεί εκεί καταλαβαίνει γιατί οι αρχαίοι έδωσαν σε αυτόν τον τόπο τέτοια αίγλη. Είναι ένα μοναδικό δρυοδάσος στα Βαλκάνια, ένα από τα μεγαλύτερα στην Ευρώπη με έκταση 42.000 στρέμματα και ενταγμένο στο δίκτυο Νatura 2000. Σε όλο το οροπέδιο της Φολόης κυριαρχεί η ευθύκορμη βελανιδιά (δρυς), την οποία ο λαός της περιοχής ονόμασε «Κάπελη», που σημαίνει πυκνό δάσος ή άφθονο δάσος. Η Κάπελη λέγεται και «μπαλκόνι της Ηλείας». Αν βρεθείτε εκτός δάσους, θα καταλάβετε το γιατί. Σε πολλά σημεία, ο ουρανός κρύβεται από τις θεόρατες βελανιδιές. Είναι ένα από τα σπανιότερα δάση, μοναδικό στα Βαλκάνια. Οι βελανιδιές του είναι ψηλές, άλλες ευθείς σαν κυπαρίσσια και άλλες χοντρές πολύκλωνες. Σύμφωνα με τους ντόπιους, στο δάσος υπάρχουν 5 εκατομμύρια δέντρα (!). Το δάσος βρίσκεται σε οροπέδιο, σε υψόμετρο 660 μέτρων. Είναι από τα αρχαιότερα δάση της Ευρώπης, ίσως και γιατί η βελανιδιά δεν καίγεται τόσο εύκολα όσο το πεύκο, γεγονός που βοηθά το δάσος στην αυτοπροστασία του από τις φωτιές.",
           "color": "#FFFFFF"
         }
@@ -287,17 +299,6 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
           "color": "#FFFFFF"
         }
       ]
-    },
-    {
-      "type": "text",
-      "tag": "p",
-      "runs": [
-        {
-          "text": "Τα Ελληνικά Μεσογειακά Δάση",
-          "color": "#49A94B"
-        }
-      ],
-      "color": "#49A94B"
     }
   ],
   "de": [
@@ -582,6 +583,17 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
       "tag": "p",
       "runs": [
         {
+          "text": "Die griechischen Mittelmeerwälder",
+          "color": "#49A94B"
+        }
+      ],
+      "color": "#49A94B"
+    },
+    {
+      "type": "text",
+      "tag": "p",
+      "runs": [
+        {
           "text": "Der Wald von Folio ist nach dem Kentaur Follo aus der griechischen Mythologie benannt. Jeder, der sich dort aufhält, versteht, warum sie damals diesem Ort einen solchen Glanz verliehen haben. Es ist ein einzigartiger Eichenwald auf dem Balkan, einer der größten in Europa mit einer Fläche von 42000 Hektar und Teil des Natura-2000-Netzes.",
           "color": "#FFFFFF"
         }
@@ -626,17 +638,6 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
           "color": "#FFFFFF"
         }
       ]
-    },
-    {
-      "type": "text",
-      "tag": "p",
-      "runs": [
-        {
-          "text": "Die griechischen Mittelmeerwälder",
-          "color": "#49A94B"
-        }
-      ],
-      "color": "#49A94B"
     }
   ]
 };

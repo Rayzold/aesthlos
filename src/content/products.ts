@@ -860,16 +860,16 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    ],
    "images": [
     {
-     "src": "/images/honeys/wild-oak-bees.webp",
-     "alt": "aesthlos wild oak honey, bees"
-    },
-    {
      "src": "/images/honeys/wild-oak-catalog.webp",
      "alt": "Untitled Catalog0090 1 copy.png"
     },
     {
      "src": "/images/honeys/wild-oak-honey.webp",
      "alt": "WildOakHoney.jpg"
+    },
+    {
+     "src": "/images/honeys/wild-oak-bees.webp",
+     "alt": "aesthlos wild oak honey, bees"
     }
    ]
   },
@@ -1107,7 +1107,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "ingredients": [
     [
      {
-      "text": "Blütenhonig, Ahornsirup, Rosa canina, Cinnamomum zeylanicum, Aschwagandha - Withania somnifera, Schisandra chinensis"
+      "text": "Blütenhonig, Agavensirup, Rosa canina, Cinnamomum zeylanicum, Aschwagandha - Withania somnifera, Schisandra chinensis"
      }
     ]
    ],
@@ -1213,7 +1213,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "ingredients": [
     [
      {
-      "text": "Blütenhonig, Ahornsirup, Vollkorn-Tahini "
+      "text": "Blütenhonig, Agavensirup, Vollkorn-Tahini "
      },
      {
       "text": "(Sesampaste)",
@@ -1318,7 +1318,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "ingredients": [
     [
      {
-      "text": "Blütenhonig,  Ahornsirup, Maca – Lepidium meyenii,  Pollen,"
+      "text": "Blütenhonig,  Agavensirup, Maca – Lepidium meyenii,  Pollen,"
      }
     ],
     [
@@ -1419,7 +1419,7 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    "ingredients": [
     [
      {
-      "text": "Blütenhonig, Ahornsirup, Ginkgo biloba,  "
+      "text": "Blütenhonig, Agavensirup, Ginkgo biloba,  "
      },
      {
       "text": "geriebene Walnüsse",
@@ -1812,16 +1812,16 @@ export const products: Record<Lang, Record<ProductSlug, Product>> = {
    ],
    "images": [
     {
-     "src": "/images/honeys/wild-oak-bees.webp",
-     "alt": "aesthlos wild oak honey, bees"
-    },
-    {
      "src": "/images/honeys/wild-oak-catalog.webp",
      "alt": "Untitled Catalog0090 1 copy.png"
     },
     {
      "src": "/images/honeys/wild-oak-honey.webp",
      "alt": "WildOakHoney.jpg"
+    },
+    {
+     "src": "/images/honeys/wild-oak-bees.webp",
+     "alt": "aesthlos wild oak honey, bees"
     }
    ]
   },

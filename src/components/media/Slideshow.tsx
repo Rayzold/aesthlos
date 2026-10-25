@@ -55,12 +55,23 @@ export default function Slideshow({
               else if (info.offset.x > 60) go(-1);
             }}
           >
+            {/* Photos have different proportions than the frame: each is shown whole (contain) so no
+                product is cut (designer feedback 25/10/2026); a blurred copy fills the edges. */}
+            <Image
+              src={images[index]}
+              alt=""
+              aria-hidden
+              fill
+              sizes="(min-width: 1024px) 490px, 100vw"
+              className="pointer-events-none scale-110 object-cover opacity-60 blur-xl"
+              draggable={false}
+            />
             <Image
               src={images[index]}
               alt={`${alt} — ${t.slide} ${index + 1}/${n}`}
               fill
               sizes="(min-width: 1024px) 490px, 100vw"
-              className="pointer-events-none object-cover"
+              className="pointer-events-none object-contain"
               priority={index === 0}
               draggable={false}
             />

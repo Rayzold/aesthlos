@@ -92,13 +92,15 @@ export default function HomePage({ lang }: { lang: Lang }) {
               ))}
             </p>
           </div>
-          <div className="relative aspect-[514/309] lg:aspect-auto">
+          {/* The product photo is square on a black background: shown whole (contain) on black so the
+              jar and box are never cut by the wide panel (designer feedback 25/10/2026). */}
+          <div className="relative aspect-square bg-black lg:aspect-auto">
             <Image
               src="/images/home/infinity-product.webp"
               alt="Aesthlos Infinity"
               fill
               sizes="(min-width: 1024px) 514px, 100vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </FadeContent>
