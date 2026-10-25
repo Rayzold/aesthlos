@@ -616,6 +616,7 @@ const TiltedCard = ({
       >
         <div className="tilted-card__face tilted-card__front absolute inset-0 isolate overflow-hidden rounded-[var(--tc-radius)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
           {imageSrc && (
+            // eslint-disable-next-line @next/next/no-img-element -- plain <img> needed for the tilt/bleed transform; src is already a pre-sized variant
             <img
               className="pointer-events-none absolute block max-w-none object-cover"
               src={imageSrc}

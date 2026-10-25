@@ -9,6 +9,10 @@ import type { Lang } from "@/content/types";
  * data is posted straight to the owner's Jotform form "Aesthlos – Επικοινωνία / Contact"
  * (EU servers). Jotform stores every message and emails a notification.
  * Field names (qN_…) come from the Jotform form; if questions are added/removed there, update JOTFORM.
+ *
+ * TECH DEBT (see README "Known limitations"): the POST is cross-origin no-cors, so a rejection by
+ * Jotform (spam, monthly quota, renamed fields) still shows "sent". The success text therefore also
+ * offers info@aesthlos.com. Proper fix: a Cloudflare Pages Function that relays and reads the response.
  */
 const JOTFORM = {
   id: "262894956014063",
@@ -100,7 +104,18 @@ export default function ContactForm({ lang }: { lang: Lang }) {
         </button>
       </div>
       <p id="form-status" role="status" aria-live="polite" className="min-h-[1.5em] text-[15px]">
-        {status === "sent" && <span className="text-white">{t.success}</span>}
+        {status === "sent" && (
+          <span className="text-white">
+            {t.success}{" "}
+            <span className="block text-[14px] text-white/80">
+              {t.successFallback}
+              <a href="mailto:info@aesthlos.com" className="underline underline-offset-4 hover:text-gold">
+                info@aesthlos.com
+              </a>
+              .
+            </span>
+          </span>
+        )}
         {status === "error" && errors.form && <span className="text-red-400">{errors.form}</span>}
       </p>
     </form>

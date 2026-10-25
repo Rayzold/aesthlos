@@ -26,7 +26,7 @@ export default function ContactPage({ lang }: { lang: Lang }) {
           {t.company.map((c, i) => (
             <p key={i}>
               {c.line}
-              {c.name && <span className={c.nameDimmed ? "text-[#2a2a2a]" : undefined}>{c.name}</span>}
+              {c.name}
             </p>
           ))}
           {t.address.map((l) => (

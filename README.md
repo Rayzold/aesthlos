@@ -55,7 +55,8 @@ also change the path in the page's content file.
 
 **Replace a PDF:** overwrite the file in `public/files/` with the same name.
 
-**Check before publishing (optional):** `npm run build && npm run check` (link check), then `npx serve out` and open http://localhost:3000.
+**Check before publishing (optional):** `npm run build`, then `npx serve out` and open http://localhost:3000.
+`npm run build` itself creates any missing image sizes and checks every link, image and PDF in the result; if something is broken it stops with a `BROKEN …` line, and Cloudflare keeps the previous version online.
 
 ### Redeploy
 
@@ -136,3 +137,9 @@ The site is static, so the contact form (designed like the rest of the site) pos
 - The fourth field ("Γλώσσα") records whether the visitor used the Greek (`el`) or German (`de`) site.
 - Spam protection: a hidden honeypot field (`website`, Jotform's own spam trap) plus Jotform's spam filter.
 - Notifications: Jotform → form → Settings → Emails → Notification email (recipient info@aesthlos.com, reply-to = sender).
+
+## Known limitations (technical debt)
+
+| # | What | Impact | Possible fix |
+|---|------|--------|--------------|
+| 1 | Contact form posts to Jotform cross-origin (`no-cors`), so the page cannot read Jotform's answer. If Jotform rejects a message (spam filter, free plan's 100 submissions/month, questions re-created so the `q2_…` field names changed), the visitor still sees "sent". | Low (traffic is far below 100/month). The success message also offers info@aesthlos.com as a fallback. | A Cloudflare Pages Function (`functions/contact.ts`) that relays the POST to Jotform and returns its real status. |

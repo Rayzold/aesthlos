@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LANGS, NAV, UI, pathFor } from "@/content/site";
 import type { Lang } from "@/content/types";
 
@@ -18,6 +18,8 @@ export default function Header({ lang }: { lang: Lang }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const ui = UI[lang];
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -27,9 +29,25 @@ export default function Header({ lang }: { lang: Lang }) {
   }, []);
 
   // Close the mobile menu on navigation and lock page scroll while it is open.
-  useEffect(() => setOpen(false), [pathname]);
+  const navigated = useRef(false);
+  useEffect(() => {
+    navigated.current = true; // closing because of navigation: don't pull focus back to the toggle
+    setOpen(false);
+  }, [pathname]);
+  // While the mobile menu is open: page scroll locked, page behind it inert (keyboard and screen
+  // readers stay in the menu), focus moved to the first link; on close, focus returns to the toggle.
+  const wasOpen = useRef(false);
   useEffect(() => {
     document.documentElement.style.overflow = open ? "hidden" : "";
+    for (const id of ["main", "site-footer"]) {
+      const el = document.getElementById(id);
+      if (el) el.inert = open;
+    }
+    if (open) menuRef.current?.querySelector<HTMLElement>("a")?.focus();
+    else if (wasOpen.current && !navigated.current) toggleRef.current?.focus();
+    wasOpen.current = open;
+    navigated.current = false;
+    if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -84,6 +102,7 @@ export default function Header({ lang }: { lang: Lang }) {
         <LangDropdown lang={lang} current={current} />
 
         <button
+          ref={toggleRef}
           type="button"
           className="ml-auto flex h-11 w-11 items-center justify-center lg:hidden"
           aria-expanded={open}
@@ -101,6 +120,7 @@ export default function Header({ lang }: { lang: Lang }) {
 
       {/* Mobile: full-screen menu with staggered fade-in */}
       <div
+        ref={menuRef}
         id="mobile-menu"
         hidden={!open}
         className="fixed inset-x-0 bottom-0 top-header z-40 overflow-y-auto bg-black lg:hidden"
@@ -149,9 +169,13 @@ function LangSwitch({ lang, current, className = "" }: { lang: Lang; current: st
   );
 }
 
-/** Desktop language selector styled like the Wix one: dark grey box "EL ⌄". */
+/**
+ * Desktop language selector styled like the Wix one: dark grey box "EL ⌄".
+ * Disclosure pattern (button + list of links); Escape closes it and returns focus to the button.
+ */
 function LangDropdown({ lang, current }: { lang: Lang; current: string }) {
   const [open, setOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const active = LANGS.find((l) => l.lang === lang)!;
   useEffect(() => {
     if (!open) return;
@@ -159,6 +183,7 @@ function LangDropdown({ lang, current }: { lang: Lang; current: string }) {
       if (e instanceof KeyboardEvent && e.key !== "Escape") return;
       if (e instanceof MouseEvent && (e.target as HTMLElement).closest("[data-lang-dropdown]")) return;
       setOpen(false);
+      if (e instanceof KeyboardEvent) buttonRef.current?.focus();
     };
     window.addEventListener("click", close);
     window.addEventListener("keydown", close);
@@ -170,9 +195,10 @@ function LangDropdown({ lang, current }: { lang: Lang; current: string }) {
   return (
     <div data-lang-dropdown className="relative ml-auto hidden lg:ml-[8px] lg:block">
       <button
+        ref={buttonRef}
         type="button"
-        aria-haspopup="listbox"
         aria-expanded={open}
+        aria-controls="lang-menu"
         aria-label={`${UI[lang].language}: ${active.label}`}
         onClick={() => setOpen((v) => !v)}
         className="flex h-[42px] items-center gap-4 rounded-md bg-[#323232] px-3 text-[16px] text-white transition-colors hover:bg-[#3d3d3d]"
@@ -183,11 +209,12 @@ function LangDropdown({ lang, current }: { lang: Lang; current: string }) {
         </svg>
       </button>
       {open && (
-        <ul role="listbox" className="absolute right-0 mt-1 min-w-full overflow-hidden rounded-md bg-[#323232] py-1 text-[16px]">
+        <ul id="lang-menu" className="absolute right-0 mt-1 min-w-full overflow-hidden rounded-md bg-[#323232] py-1 text-[16px]">
           {LANGS.map((l) => (
-            <li key={l.lang} role="option" aria-selected={l.lang === lang}>
+            <li key={l.lang}>
               <Link
                 href={pathFor(l.lang, current)}
+                aria-current={l.lang === lang ? "true" : undefined}
                 hrefLang={l.htmlLang}
                 lang={l.htmlLang}
                 className={`block px-3 py-1.5 hover:bg-[#444] ${l.lang === lang ? "text-gold" : "text-white"}`}

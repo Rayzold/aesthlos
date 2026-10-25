@@ -4,16 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/image-variants.mjs && next build && node scripts/check-links.mjs out",
     "start": "next start",
     "lint": "eslint",
     "variants": "node scripts/image-variants.mjs",
     "images": "node scripts/optimize-media.mjs && node scripts/image-variants.mjs && node scripts/og-images.mjs",
-    "check": "python3 scripts/check-links.py out"
+    "check": "node scripts/check-links.mjs out"
   },
   "dependencies": {
-    "@fontsource/questrial": "^5.3.0",
-    "@fontsource/roboto-condensed": "^5.3.0",
     "@gsap/react": "^2.1.2",
     "gsap": "^3.15.0",
     "motion": "^14.3.0",

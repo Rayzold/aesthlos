@@ -8,6 +8,15 @@ export function imageFor(wixId: string): MediaEntry | undefined {
   return index[wixId.replace("~", "_")];
 }
 
+const bySrc = new Map(Object.values(index).map((e) => [e.src, e]));
+
+/** Real pixel size of a local image (from the media index), so next/image reserves the right space. */
+export function sizeOf(src: string): { width: number; height: number } {
+  const e = bySrc.get(src);
+  if (!e) throw new Error(`Image not in media-index.json: ${src}`);
+  return { width: e.width, height: e.height };
+}
+
 /** Wix PDFs (/_files/ugd/<id>.pdf) -> local readable file names in /public/files. */
 export const FILES: Record<string, string> = {
   "21375d_6ed06d5b5ec74e3eabf40badfe90cb8a.pdf": "/files/aesthlos-pistopoiisi.pdf",

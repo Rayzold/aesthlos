@@ -25,7 +25,6 @@ export default function FixedBackground({
       <picture>
         <source media="(max-width: 767px)" srcSet={variant(mobileSrc ?? src, 1080)} />
         <source srcSet={[1080, 1600, 2560].map((w) => `${variant(src, w)} ${w}w`).join(", ")} sizes="100vw" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt="" className="h-full w-full object-cover" style={{ objectPosition: position }} fetchPriority={priority} />
       </picture>
       {overlay > 0 && <div className="absolute inset-0 bg-black" style={{ opacity: overlay }} />}

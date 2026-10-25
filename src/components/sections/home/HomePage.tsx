@@ -175,7 +175,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
   );
 }
 
-/** The quote is stored as runs with a line break; ScrollReveal needs one plain string per line. */
+/** The quote is stored as runs with a line break; BlurText animates one plain string per line. */
 function splitQuote(runs: { text: string }[]): string[] {
   return runs
     .map((r) => r.text)

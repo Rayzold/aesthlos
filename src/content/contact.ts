@@ -11,7 +11,8 @@ export const contact: Record<
     fields: { name: string; email: string; message: string };
     submit: string;
     success: string;
-    company: { line: string; name: string; nameDimmed?: boolean }[];
+    successFallback: string;
+    company: { line: string; name: string }[];
     address: string[];
     emailLabel: string;
     phoneLabel: string;
@@ -25,6 +26,8 @@ export const contact: Record<
     fields: { name: "Ονοματεπώνυμο", email: "Email", message: "Το μήνυμά σου, ή, η παραγγελία σου..." },
     submit: "Αποστολή",
     success: "Ευχαριστούμε για την επικοινωνία!",
+    // Added (code review 25/10): the Jotform response is opaque, so offer the email as a fallback.
+    successFallback: "Αν δεν λάβετε απάντηση, γράψτε μας στο ",
     // On Wix the person's name is dark grey (#2A2A2A) on black, i.e. practically hidden — kept as is.
     company: [{ line: "AESTHLOS THERAFOODS ", name: "Κουτάλας Ανδρέας" }],
     address: ["Εταιρεία Παραγωγής Τροφίμων", "Ομήρου 14, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα"],
@@ -44,6 +47,7 @@ export const contact: Record<
     fields: { name: "Vor - und Zuname", email: "Email", message: "Bitte schreiben Sie hier Ihren Text..." },
     submit: "Senden",
     success: "Danke für Ihre Nachricht!",
+    successFallback: "Falls Sie keine Antwort erhalten, schreiben Sie uns an ", // translated
     company: [{ line: "AESTHLOS THERAFOODS Koutalas Andreas", name: "" }],
     // "Lebensmittelhersteller": translated (the Wix German page had no equivalent of "Εταιρεία Παραγωγής Τροφίμων")
     address: ["Lebensmittelhersteller", "Οmirou 14, Nea Smirni", "17122 Αthen - Griechenland"],

@@ -1,15 +1,19 @@
 "use client";
 
+import { useEffect } from "react";
+
 /**
  * Short fade between routes. Skipped on the very first page load so the first paint
  * (and the LCP image) is visible immediately; only client-side navigations fade in.
- * The flag lives only in the browser — prerendered HTML never carries the fade class.
+ * The flag is set after the first commit (useEffect), never during render, so a re-run of the
+ * hydration render always matches the prerendered HTML.
  */
-let hydrated = false;
+let firstPageShown = false;
 
 export default function PageFade({ children }: { children: React.ReactNode }) {
-  const isBrowser = typeof window !== "undefined";
-  const fade = isBrowser && hydrated;
-  if (isBrowser) hydrated = true;
+  const fade = firstPageShown;
+  useEffect(() => {
+    firstPageShown = true;
+  }, []);
   return <div className={fade ? "page-fade" : undefined}>{children}</div>;
 }

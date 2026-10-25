@@ -14,7 +14,10 @@ for (const f of files) {
   const { width } = await sharp(src).metadata();
   for (const w of WIDTHS) {
     const out = src.replace(/\.webp$/, `-w${w}.webp`);
-    if (fs.existsSync(out) && fs.statSync(out).mtimeMs > fs.statSync(src).mtimeMs) continue;
+    // Locally: regenerate when the source is newer (an image replaced under the same name).
+    // In CI (Cloudflare sets CF_PAGES, others CI) file times come from the git checkout, so only
+    // create what is missing — committed variants are kept as they are.
+    if (fs.existsSync(out) && (process.env.CF_PAGES || process.env.CI || fs.statSync(out).mtimeMs > fs.statSync(src).mtimeMs)) continue;
     if (w >= width) fs.copyFileSync(src, out);
     else await sharp(src).resize(w).webp({ quality: 80, alphaQuality: 90, effort: 5 }).toFile(out);
     n++;

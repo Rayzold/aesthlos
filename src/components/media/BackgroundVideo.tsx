@@ -21,7 +21,9 @@ export default function BackgroundVideo({ src, poster, className = "" }: { src: 
 
   useEffect(() => {
     const v = ref.current;
-    if (!v || reduced) return;
+    // Check the media query directly: on the first run `reduced` is still its initial `false`,
+    // which used to start (and download) the video for reduced-motion visitors.
+    if (!v || reduced || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const io = new IntersectionObserver(([e]) => (e.isIntersecting ? v.play().catch(() => {}) : v.pause()), { threshold: 0.05 });
     io.observe(v);
     return () => io.disconnect();

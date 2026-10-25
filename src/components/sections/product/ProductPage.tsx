@@ -7,7 +7,7 @@ import RichText from "@/components/content/RichText";
 import BlurText from "@/components/ui/BlurText";
 import FadeContent from "@/components/motion/Reveal";
 import { pageDescription } from "@/lib/content";
-import { resolveHref } from "@/lib/media";
+import { resolveHref, sizeOf } from "@/lib/media";
 
 /**
  * One template for all 8 product pages (6 compositions, 2 honeys), matching the live layout
@@ -150,16 +150,14 @@ function Buttons({ links, lang }: { links: ProductLink[]; lang: Lang }) {
 }
 
 function Photos({ p }: { p: CompositionProduct | HoneyProduct }) {
-  const many = p.images.length > 1;
   return (
-    <div className={many ? "space-y-1.5" : undefined}>
+    <div className={p.images.length > 1 ? "space-y-1.5" : undefined}>
       {p.images.map((img, i) => (
         <FadeContent key={img.src} delay={i * 0.1} duration={0.9} className="overflow-hidden">
           <Image
             src={img.src}
             alt={img.alt && !/\.(png|jpe?g)$/i.test(img.alt) ? img.alt : p.title}
-            width={1200}
-            height={many ? 900 : 1800}
+            {...sizeOf(img.src)}
             priority={i === 0}
             sizes="(min-width: 1024px) 494px, 100vw"
             className="h-auto w-full transition-transform duration-700 ease-out hover:-translate-y-1 hover:scale-[1.015]"
@@ -183,5 +181,5 @@ function ProductJsonLd({ lang, slug, name, image }: { lang: Lang; slug: ProductS
     manufacturer: { "@type": "Organization", name: "Aesthlos Therafoods", url: SITE_URL },
     inLanguage: lang,
   };
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
 }

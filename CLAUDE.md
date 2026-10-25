@@ -12,7 +12,9 @@ PROJECT: Rebuild https://www.aesthlos.com (currently on Wix) as a self-owned, st
 - Next.js (App Router) + TypeScript + Tailwind CSS, `output: 'export'` (pure static HTML, deployable to any host).
 - React Bits components in TS-TW variant, installed into src/components/ui/ via `npx shadcn@latest add @react-bits/<Name>-TS-TW`. Always check the exact component name on reactbits.dev first; some names in reactbits-guide.md may differ from the real library (e.g. TiltedCard, DecryptedText).
 - next/image with a custom loader (src/lib/image-loader.ts) that points at pre-generated WebP width variants (`npm run images`, scripts/image-variants.mjs); widths must match next.config.ts deviceSizes/imageSizes.
-- Designed pages have their own route folders (not [slug]) so each ships only its own JS; [slug] serves product/raw pages.
+- Designed pages have their own route folders (not [slug]) so each ships only its own JS; [slug] serves the 8 product pages.
+- `npm run build` = image variants (missing only in CI) + next build + `scripts/check-links.mjs` (fails the deploy on any broken link/asset/Wix URL).
+- Known technical debt is listed in README "Known limitations".
 
 ## Motion rules (premium = restrained)
 - Read reactbits-guide.md. Follow its "audit before you animate" rule: motion supports the content, never competes with it.

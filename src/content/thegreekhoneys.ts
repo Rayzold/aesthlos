@@ -261,7 +261,7 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
     },
     {
       "type": "text",
-      "tag": "p",
+      "tag": "h3",
       "runs": [
         {
           "text": "Τα Ελληνικά Μεσογειακά Δάση",
@@ -580,7 +580,7 @@ export const greekHoneys: Record<Lang, EditorialBlock[]> = {
     },
     {
       "type": "text",
-      "tag": "p",
+      "tag": "h3",
       "runs": [
         {
           "text": "Die griechischen Mittelmeerwälder",

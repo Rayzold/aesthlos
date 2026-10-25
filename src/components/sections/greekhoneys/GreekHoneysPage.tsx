@@ -15,12 +15,15 @@ import { imageFor, resolveHref } from "@/lib/media";
 export default function GreekHoneysPage({ lang }: { lang: Lang }) {
   const blocks = greekHoneys[lang];
   // Split the flow at the TÜV badge: everything after it is the "Aesthlos honeys" part with photo.
-  const tuv = blocks.findIndex((b) => b.type === "image" && b.src.startsWith("21375d_3b6b47"));
+  // The blocks are found by their Wix image ids; if the content changes and one is missing, fail the
+  // build loudly instead of silently dropping text (code review 25/10).
+  const tuv = must(blocks.findIndex((b) => b.type === "image" && b.src.startsWith("21375d_3b6b47")), "TÜV badge", lang);
   const article = blocks.slice(0, tuv);
   const honeys = blocks.slice(tuv);
   const heading = honeys.find((b) => b.type === "text" && b.tag === "h2");
   const eu = honeys.find((b) => b.type === "image" && b.src.startsWith("21375d_6fbcd7"));
   const photo = honeys.find((b) => b.type === "image" && b.src.startsWith("21375d_81d6a3"));
+  if (!heading || !eu || !photo) throw new Error(`thegreekhoneys (${lang}): honeys heading, EU badge or photo block not found`);
   const rest = honeys.filter((b) => b.type === "text" && b !== heading);
 
   return (
@@ -36,20 +39,18 @@ export default function GreekHoneysPage({ lang }: { lang: Lang }) {
         <section className="mt-16">
           <div className="flex items-center justify-center gap-4 sm:gap-6">
             <Image src="/images/thegreekhoneys/tuv-certification.webp" alt="Aesthlos TUV certification" width={93} height={93} className="h-16 w-16 sm:h-[93px] sm:w-[93px]" />
-            {heading && heading.type === "text" && (
+            {heading.type === "text" && (
               <h2 className="text-center text-[22px] leading-[1.1] sm:text-[30px]">
                 <RichText runs={heading.runs} lang={lang} />
               </h2>
             )}
-            {eu && <Image src="/images/thegreekhoneys/eu-non-eu-certification.webp" alt="aesthlos EU/NON-EU certification" width={75} height={78} className="h-auto w-14 sm:w-[75px]" />}
+            <Image src="/images/thegreekhoneys/eu-non-eu-certification.webp" alt="aesthlos EU/NON-EU certification" width={75} height={78} className="h-auto w-14 sm:w-[75px]" />
           </div>
 
           <div className="mt-10 grid items-start gap-8 lg:grid-cols-[400px_1fr]">
-            {photo && (
-              <Parallax strength={30}>
-                <Image src="/images/thegreekhoneys/honeys-square.webp" alt="Aesthlos Μέλι Βελανιδιάς & Μέλι Δάσους" width={1600} height={1600} sizes="(min-width: 1024px) 400px, 100vw" className="h-auto w-full" />
-              </Parallax>
-            )}
+            <Parallax strength={30}>
+              <Image src="/images/thegreekhoneys/honeys-square.webp" alt="Aesthlos Μέλι Βελανιδιάς & Μέλι Δάσους" width={1600} height={1600} sizes="(min-width: 1024px) 400px, 100vw" className="h-auto w-full" />
+            </Parallax>
             <div className="space-y-4">
               {rest.map((b, i) => (
                 <Block key={i} b={b} lang={lang} />
@@ -92,6 +93,15 @@ function Block({ b, lang }: { b: EditorialBlock; lang: Lang }) {
       </Tag>
     );
   }
+  if (b.tag === "h3") {
+    return (
+      <FadeContent duration={0.7}>
+        <h3 className="pt-2 text-[17px]">
+          <RichText runs={b.runs} lang={lang} />
+        </h3>
+      </FadeContent>
+    );
+  }
   const isLead = b.runs.every((r) => r.bold || r.color === "#FFC824" || r.color === "#49A94B");
   return (
     <FadeContent duration={0.7}>
@@ -100,4 +110,9 @@ function Block({ b, lang }: { b: EditorialBlock; lang: Lang }) {
       </p>
     </FadeContent>
   );
+}
+
+function must(index: number, what: string, lang: Lang): number {
+  if (index < 0) throw new Error(`thegreekhoneys (${lang}): ${what} block not found in content`);
+  return index;
 }
