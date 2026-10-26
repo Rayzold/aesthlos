@@ -43,6 +43,14 @@
 
 ---
 
+> ✅ **Η μεταφορά ολοκληρώθηκε στις 26/10/2026.**
+> - **Email (papaki):** Οι εγγραφές `mail` / `webmail` / SPF διορθώθηκαν στον νέο server **213.158.90.247**. Τα MX και DKIM μένουν ως έχουν.
+> - **papaki:** Οι nameservers άλλαξαν σε `jonah` / `yolanda.ns.cloudflare.com`. Χρειάστηκε προσωρινά OFF στο κλείδωμα, που μετά ξαναγύρισε σε ON.
+> - **Cloudflare:** Η ζώνη είναι **Active**. Τα `www.aesthlos.com` και `aesthlos.com` δείχνουν (CNAME, proxied) στο Pages project `aesthlos`, με πιστοποιητικό HTTPS.
+> - **Redirect Rules:** `aesthlos.com` → `https://www.aesthlos.com` (301, κρατά το query) και `?lang=de` → `/de/…` (301). Το *Always Use HTTPS* είναι ενεργό.
+> - **Έλεγχοι στο live domain:** Και οι 23 διευθύνσεις που δοκιμάστηκαν (σελίδες, sitemap, robots.txt, PDF, εικόνα) δίνουν 200, και η ανύπαρκτη σελίδα δίνει 404. Λειτουργούν ακόμα η ανακατεύθυνση `?lang=de`, το `http://aesthlos.com` → `https://www`, το CSP και το HSTS.
+> - **Μένει:** Βήμα 6 (Search Console), δοκιμή email (SPF/DKIM PASS) και Βήμα 7 (ακύρωση Wix μετά από 1–2 εβδομάδες).
+
 ## Βήμα 0: Αντίγραφο του DNS (πριν αλλάξει οτιδήποτε)
 
 1. Wix → **Domains** → aesthlos.com → **Manage DNS Records**.
