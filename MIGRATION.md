@@ -49,7 +49,8 @@
 > - **Cloudflare:** Η ζώνη είναι **Active**. Τα `www.aesthlos.com` και `aesthlos.com` δείχνουν (CNAME, proxied) στο Pages project `aesthlos`, με πιστοποιητικό HTTPS.
 > - **Redirect Rules:** `aesthlos.com` → `https://www.aesthlos.com` (301, κρατά το query) και `?lang=de` → `/de/…` (301). Το *Always Use HTTPS* είναι ενεργό.
 > - **Έλεγχοι στο live domain:** Και οι 23 διευθύνσεις που δοκιμάστηκαν (σελίδες, sitemap, robots.txt, PDF, εικόνα) δίνουν 200, και η ανύπαρκτη σελίδα δίνει 404. Λειτουργούν ακόμα η ανακατεύθυνση `?lang=de`, το `http://aesthlos.com` → `https://www`, το CSP και το HSTS.
-> - **Μένει:** Βήμα 6 (Search Console), δοκιμή email (SPF/DKIM PASS) και Βήμα 7 (ακύρωση Wix μετά από 1–2 εβδομάδες).
+> - **Search Console (26/10):** Νέο property τύπου **Domain** (`aesthlos.com`) στον λογαριασμό markos.stefanou@gmail.com, επαληθευμένο με εγγραφή TXT `google-site-verification…` στο Cloudflare. **Η εγγραφή δεν σβήνεται, αλλιώς χάνεται η επαλήθευση.** Υποβλήθηκε το `https://www.aesthlos.com/sitemap.xml`. Ζητήθηκε indexing για `/`, `/thecompositions`, `/ourphilosophy` και `/de`. Το παλιό property (meta tag) μένει στον λογαριασμό που το είχε.
+> - **Μένει:** δοκιμή email (SPF/DKIM PASS), έλεγχος του Indexing στο Search Console μετά από 1–2 εβδομάδες, Βήμα 7 (ακύρωση Wix).
 
 ## Βήμα 0: Αντίγραφο του DNS (πριν αλλάξει οτιδήποτε)
 
