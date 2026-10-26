@@ -13,14 +13,16 @@
 | Site (apex) | A → `185.230.63.171`, `185.230.63.107`, `185.230.63.186` (Wix) | Θα αντικατασταθεί. |
 | Site (www) | CNAME → `cdn3.wixdns.net` (Wix) | Θα αντικατασταθεί. |
 | **Email (MX)** | `10 mail.aesthlos.com` | ⚠️ Πρέπει να μεταφερθεί ακριβώς. |
-| mail.aesthlos.com | A → `148.251.14.105` (= `server.linux50.papaki.gr`) | ⚠️ Ο mail server του **papaki**. Μεταφέρεται ακριβώς, **χωρίς proxy** (γκρι σύννεφο). |
-| webmail.aesthlos.com | A → `148.251.14.105` | ⚠️ Το webmail του papaki. Επίσης **χωρίς proxy**. |
-| SPF | TXT `v=spf1 +a +mx include:_spf.fastmail.gr +ip6:2a01:4f8:201:7368::2 -all` | ⚠️ Μεταφέρεται ακριβώς. Το `fastmail.gr` είναι η υποδομή email του papaki. |
+| mail.aesthlos.com | A → ~~`148.251.14.105`~~ **`213.158.90.247`** (`linux261.papaki.gr`) | ⚠️ Ο mail server του **papaki**. Πάντα **χωρίς proxy** (γκρι σύννεφο). |
+| webmail.aesthlos.com | A → ~~`148.251.14.105`~~ **`213.158.90.247`** | ⚠️ Το webmail του papaki. Επίσης **χωρίς proxy**. |
+| SPF | TXT `v=spf1 +a +mx include:_spf.fastmail.gr +ip6:2a00:1c98:1010:1::f1 -all` (πριν: `+ip6:2a01:4f8:201:7368::2`) | ⚠️ Μεταφέρεται ακριβώς. Το `fastmail.gr` είναι η υποδομή email του papaki. |
 | DKIM | TXT στο `default._domainkey` (`v=DKIM1; p=MIGfMA0…`) | ⚠️ Αντιγράφεται **ολόκληρη** η τιμή από τον πίνακα DNS του Wix. |
 | DMARC | — (δεν υπάρχει) | Προαιρετικό, για αργότερα. |
 | Άλλα ονόματα email (autodiscover, autoconfig, smtp, imap, pop, SRV) | — (δεν υπάρχουν) | Ελέγχθηκε 17/10/2026. Το email εξαρτάται **μόνο** από τις 5 εγγραφές MX, mail, webmail, SPF και DKIM. |
 | **Πάροχος email και hosting** | **papaki.gr** | Το πακέτο του papaki **μένει ενεργό**, γιατί εκεί είναι το email. Αλλάζει μόνο το ποιος διαχειρίζεται το DNS. |
 | Google Search Console | Επαλήθευση με meta tag (υπάρχει ήδη στο νέο site) | Δεν χρειάζεται νέα επαλήθευση. |
+
+> ⚠️ **26/10/2026 — το papaki άλλαξε server.** Στις 23–24/09/2026 οι υπηρεσίες email/hosting του aesthlos μεταφέρθηκαν από τον `linux50.papaki.gr` (148.251.14.105, v6 `2a01:4f8:201:7368::2`) στον **`linux261.papaki.gr` (213.158.90.247, v6 `2a00:1c98:1010:1::f1`)**. Επειδή το DNS του aesthlos.com είναι εξωτερικό (Wix), οι εγγραφές δεν ενημερώθηκαν αυτόματα: το `webmail.aesthlos.com` σταμάτησε να λειτουργεί, και πιθανώς και η παραλαβή email. Σύμφωνα με το email του papaki, **σε όλες τις εγγραφές η παλιά IP (v4 και v6) αντικαθίσταται με τη νέα**: A `mail`, A `webmail` και το `ip6:` στο SPF. Οι τιμές στον πίνακα είναι ήδη ενημερωμένες.
 
 Η πρόταση είναι το DNS να περάσει στο **Cloudflare** (δωρεάν), αφού εκεί θα φιλοξενείται και το site. Το domain μένει στο papaki.
 
@@ -62,10 +64,10 @@
 1. Cloudflare → **Add a domain** → `aesthlos.com` → πλάνο **Free**.
 2. Το Cloudflare διαβάζει μόνο του τις εγγραφές DNS. **Ελέγξτε τις μία-μία** με το αντίγραφο του Βήματος 0:
    - `MX  aesthlos.com  →  mail.aesthlos.com` (priority 10)
-   - `A   mail  →  148.251.14.105`: **Proxy status: DNS only (γκρι σύννεφο)**. Αυτό είναι απαραίτητο για το email.
+   - `A   mail  →  213.158.90.247`: **Proxy status: DNS only (γκρι σύννεφο)**. Αυτό είναι απαραίτητο για το email.
    - `TXT aesthlos.com  →  v=spf1 …` (SPF), όπως ακριβώς είναι
    - `TXT default._domainkey  →  v=DKIM1; p=…` (DKIM), ολόκληρη η τιμή
-   - `A   webmail  →  148.251.14.105`: επίσης **DNS only**
+   - `A   webmail  →  213.158.90.247`: επίσης **DNS only**
    - Τα A του apex και το CNAME του www (Wix): επίσης **DNS only** μέχρι το Βήμα 4, ώστε το Wix site να δουλεύει όπως σήμερα
 3. Τις εγγραφές του site (A του apex προς 185.230.63.x και CNAME του www προς Wix) **τις αφήνετε προς το παρόν**. Έτσι το Wix site συνεχίζει να δουλεύει κατά την αλλαγή.
 4. Το Cloudflare θα δώσει **δύο nameservers** (π.χ. `xxx.ns.cloudflare.com`).
