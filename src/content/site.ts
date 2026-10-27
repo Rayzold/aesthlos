@@ -45,8 +45,8 @@ export const NAV: Record<Lang, { label: string; slug: Slug }[]> = {
 
 export const FOOTER: Record<Lang, { credit: string; tagline: string }> = {
   el: { credit: "@ designed by Aesthlos Therafoods 2026", tagline: "Next Generation Superfoods..." },
-  // The live German footer still says 2025; kept verbatim.
-  de: { credit: "@ designed by Aesthlos Therafoods 2025", tagline: "Next Generation Superfoods..." },
+  // Owner request 27/10: German footer year 2025 -> 2026 (as in Greek).
+  de: { credit: "@ designed by Aesthlos Therafoods 2026", tagline: "Next Generation Superfoods..." },
 };
 
 export const UI: Record<Lang, { menu: string; close: string; skip: string; more: string; language: string; home: string }> = {

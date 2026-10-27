@@ -28,9 +28,9 @@ export const contact: Record<
     success: "Ευχαριστούμε για την επικοινωνία!",
     // Added (code review 25/10): the Jotform response is opaque, so offer the email as a fallback.
     successFallback: "Αν δεν λάβετε απάντηση, γράψτε μας στο ",
-    // On Wix the person's name is dark grey (#2A2A2A) on black, i.e. practically hidden — kept as is.
+    // Owner decision 25/10: the name is shown (on Wix it was dark grey on black). Address changed 27/10: Βυζαντίου 23 (was Ομήρου 14).
     company: [{ line: "AESTHLOS THERAFOODS ", name: "Κουτάλας Ανδρέας" }],
-    address: ["Εταιρεία Παραγωγής Τροφίμων", "Ομήρου 14, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα"],
+    address: ["Εταιρεία Παραγωγής Τροφίμων", "Βυζαντίου 23, Νέα Σμύρνη Τ.Κ. 17122 Αθήνα"],
     emailLabel: "E: ",
     phoneLabel: "Τ: +30 ",
     phoneDisplay: "213014 4422",
@@ -50,7 +50,7 @@ export const contact: Record<
     successFallback: "Falls Sie keine Antwort erhalten, schreiben Sie uns an ", // translated
     company: [{ line: "AESTHLOS THERAFOODS Koutalas Andreas", name: "" }],
     // "Lebensmittelhersteller": translated (the Wix German page had no equivalent of "Εταιρεία Παραγωγής Τροφίμων")
-    address: ["Lebensmittelhersteller", "Οmirou 14, Nea Smirni", "17122 Αthen - Griechenland"],
+    address: ["Lebensmittelhersteller", "Vyzantiou 23, Nea Smirni", "17122 Αthen - Griechenland"],
     emailLabel: "E: ",
     phoneLabel: "Τ: +30 ",
     phoneDisplay: "21 3014 4422",
